@@ -9,7 +9,8 @@ nav{
     border-radius: 2em;
     margin: 10px;
     padding-left: 10px;
-    
+    z-index: 5;
+    position: relative;
     height: 5em;
     background-color: rgb(48, 51, 64);
 }
@@ -24,7 +25,7 @@ nav{
     margin: auto;
     border-radius: 1em;
     background-color: rgba(255, 255, 255, 0.5);
-    border: 1px solid white;
+    border: 1px solid #1fd911;
     color: black;
     box-shadow: rgba(255, 255, 255, 0.35) 0px 0px 20px;
 }
@@ -92,10 +93,73 @@ nav{
     backdrop-filter: blur(10px);
     border-radius: 0.7em;
 }
-
+.vid{
+    height: 40em;
+}
 #background-video{
-    top: -6.23em;
+    margin-top: -20em;
     width: 100%;
+    height: 83em;
     z-index: -12;
+    position: inherit;
+}
+.hero{
+
+    margin-left: 2em;
+    padding: 2em;
+    color: white;
+    width: 30%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2em;
+    border: 1px solid #1fd911;
+}
+.hero-sec{
+    margin-top: -60em;
+    height: 40em;
+}
+.comp-name{
+    color: #1fd911;
+    font-weight: bold;
+}
+.hero-text{
+    margin-top: -1em;
+    display: flex;
+}
+.hero-text>p{
+    font-size: em;
+
+}
+.typing-container {
+    font-family: 'Courier New', monospace;
+    font-size: 35px;
+    margin-top: 0.5em;
+    white-space: pre-wrap; /* This preserves line breaks */
+    width: 100%; /* Responsive width */
+    max-width: 100%; /* Ensures it doesn't overflow */
+}
+.typed-text{
+    text-align: center;
+}
+.video-wrapper{
+    top: -6.22em;
     position: relative;
+    background: #6bf16b69;
+}
+
+/* Blinking cursor style */
+#cursor {
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 2px;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
 }
