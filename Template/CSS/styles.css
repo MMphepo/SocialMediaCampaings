@@ -16,6 +16,8 @@ nav{
 .icon{
     width: 20%;
     margin: auto;
+    text-align: center;
+    font-size: 2em;
 }
 .links{
     width: 60%;
@@ -30,6 +32,7 @@ nav{
 .profile{
     width: 10%;
     margin: auto;
+    margin-left: 2em;
     text-align: center;
 }
 .search{
@@ -41,10 +44,12 @@ nav{
 .links>ul{
     display: flex;
     list-style: none;
-    padding:1em;
+    padding: 0.4em;
     justify-content: space-around;
     margin: auto;
+    font-size: 1.5vw;
 }
+
 .links>ul>li{
     padding-inline: 2em;
     transition: 0.7s;
@@ -86,4 +91,11 @@ nav{
 .cont-body{
     backdrop-filter: blur(10px);
     border-radius: 0.7em;
+}
+
+#background-video{
+    top: -6.23em;
+    width: 100%;
+    z-index: -12;
+    position: relative;
 }

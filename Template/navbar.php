@@ -17,6 +17,6 @@
             <li>Contact us</li>
         </ul>
     </div>
-    <div class="profile">icon</div>
-    <div class="search">search</div>
+    <div class="profile"><canvas id="contactIcon" width="50" height="50"></canvas></div>
+    <div class="search"><canvas id="searchIcon" width="50" height="50"></canvas></div>
 </nav>    
