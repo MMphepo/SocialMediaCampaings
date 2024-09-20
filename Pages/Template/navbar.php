@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <nav>
+    <nav id="navi">
         <div class="icon">SMC</div>
         <div class="links">
             <ul>
@@ -42,36 +42,3 @@
 
         <div class="search"><canvas id="searchIcon" width="50" height="50"></canvas></div>
     </nav>
-
-   
-    <!-- <script>
-    function checkLoginStatus(targetPage) {
-    fetch('check_login.php', {
-        method: 'GET',
-        credentials: 'same-origin' // This is important for including cookies
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.loggedIn) {
-            // User is logged in, proceed to the target page
-            window.location.href = targetPage;
-        } else {
-            // User is not logged in, show login form or message
-            showLoginForm();
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        // Handle error (e.g., show an error message to the user)
-    });
-}
-
-function showLoginForm() {
-    // This function should display your login form
-    // You can show a modal, update a div, etc.
-    document.getElementById('loginFormContainer').style.display = 'block';
-}
-
-// Use this function for navigation instead of direct links
-// For example: <button onclick="checkLoginStatus('protected_page.php')">Go to Protected Page</button>
-</script>    -->
