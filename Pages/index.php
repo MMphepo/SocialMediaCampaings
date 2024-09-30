@@ -37,7 +37,9 @@
     <p>This div has a video background!</p>
   </div>
 </div>
-
+<div class="Most-pop-head">
+  <h1>Most Popular Social Media Platforms</h1>
+</div>
 <section class="MostPopular section" id="scrollSection">
   <div class="top">
     <div class="content">
@@ -58,10 +60,6 @@
     </div>
   </div>
 
-  <div>
-    <rssapp-carousel id="tjcy1UHfdQtlCQpm"></rssapp-carousel>
-    <script src="https://widget.rss.app/v1/carousel.js" type="text/javascript" async></script>
-  </div>
   <script>
     function twitter() {
       var headText = document.getElementById('head-text');
@@ -74,7 +72,6 @@
     }
   </script>
 </section>
-
 <section class="Newsletter">
   <div class="news-pop">
     <h1>Subscribe</h1>
@@ -85,27 +82,10 @@
     </form>
   </div>
 </section>
-<section>
-  
+<section class="rssfeed">
+  <rssapp-wall id="toeg8jwamcdIUqvn"></rssapp-wall>
+  <script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
 </section>
-
-
-<!-- <div class="video-wrapper">
-  <video autoplay muted loop id="background-video">
-    <source class="vid" src="../media/720pFH.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div> -->
-<!-- <section class="hero-sec">
-  <div class="hero">
-    <div class="comp-name">
-      <p>SOCIAL MEDIA COMPAIGN</p>
-    </div>
-    <div class="hero-text typing-container">
-      <div class="typing-container"><span id="typed-text"></span><span id="cursor">|</span></div>
-    </div>
-  </div>
-</section> -->
 
 
 <div id="content-source" style="display:none;">
@@ -218,42 +198,42 @@
 </script>
 
 <head>
-            <meta name="google-signin-client_id" content="601717773215-ki89r8n493im5u5kir9udc4h803qsjrk.apps.googleusercontent.com">
+  <meta name="google-signin-client_id" content="601717773215-ki89r8n493im5u5kir9udc4h803qsjrk.apps.googleusercontent.com">
 
-        </head>
+</head>
 
-        <body>
-            <div id="g_id_onload"
-                data-client_id="601717773215-ki89r8n493im5u5kir9udc4h803qsjrk.apps.googleusercontent.com"
-                data-login_uri="https://redirectmeto.com/http://localhost:80/SocialMediaCompany/SocialMediaCampaingks/Pages/"
-                data-auto_prompt="false">
-            </div>
-            <script>
-                function handleCredentialResponse(response) {
-                    // Send the credential to your backend for verification
-                    var xhr = new XMLHttpRequest();
-                    xhr.open('POST', '../controls/auth/verify.php');
-                    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-                    xhr.onload = function() {
-                        console.log('Signed in as: ' + xhr.responseText);
-                    };
-                    xhr.send('credential=' + response.credential);
-                }
+<body>
+  <div id="g_id_onload"
+    data-client_id="601717773215-ki89r8n493im5u5kir9udc4h803qsjrk.apps.googleusercontent.com"
+    data-login_uri="https://redirectmeto.com/http://localhost:80/SocialMediaCompany/SocialMediaCampaingks/Pages/"
+    data-auto_prompt="false">
+  </div>
+  <script>
+    function handleCredentialResponse(response) {
+      // Send the credential to your backend for verification
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', '../controls/auth/verify.php');
+      xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+      xhr.onload = function() {
+        console.log('Signed in as: ' + xhr.responseText);
+      };
+      xhr.send('credential=' + response.credential);
+    }
 
-                window.onload = function() {
-                    google.accounts.id.initialize({
-                        client_id: '601717773215-ki89r8n493im5u5kir9udc4h803qsjrk.apps.googleusercontent.com',
-                        callback: handleCredentialResponse
-                    });
-                    google.accounts.id.renderButton(
-                        document.getElementById('g_id_signin'), {
-                            theme: 'outline',
-                            size: 'large'
-                        } // Customization attributes
-                    );
-                   
-                    google.accounts.id.prompt(); // Automatically prompt for sign-in
-                 
-                }  
-            </script>
-            <script src="https://accounts.google.com/gsi/client" async defer></script>
+    window.onload = function() {
+      google.accounts.id.initialize({
+        client_id: '601717773215-ki89r8n493im5u5kir9udc4h803qsjrk.apps.googleusercontent.com',
+        callback: handleCredentialResponse
+      });
+      google.accounts.id.renderButton(
+        document.getElementById('g_id_signin'), {
+          theme: 'outline',
+          size: 'large'
+        } // Customization attributes
+      );
+
+      google.accounts.id.prompt(); // Automatically prompt for sign-in
+
+    }
+  </script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
