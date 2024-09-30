@@ -59,7 +59,8 @@
   </div>
 
   <div>
-  <rssapp-carousel id="tjcy1UHfdQtlCQpm"></rssapp-carousel><script src="https://widget.rss.app/v1/carousel.js" type="text/javascript" async></script>
+    <rssapp-carousel id="tjcy1UHfdQtlCQpm"></rssapp-carousel>
+    <script src="https://widget.rss.app/v1/carousel.js" type="text/javascript" async></script>
   </div>
   <script>
     function twitter() {
@@ -84,7 +85,9 @@
     </form>
   </div>
 </section>
-
+<section>
+  
+</section>
 
 
 <!-- <div class="video-wrapper">
@@ -121,44 +124,44 @@
     /* Paste the custom cursor CSS here */
     /* Custom cursor for the entire website */
 
-    .custom-cursor, .custom-pointer {
-  position: fixed;
-  pointer-events: none;
-  z-index: 9999;
-  transition: opacity 0.3s ease;
-}
+    .custom-cursor,
+    .custom-pointer {
+      position: fixed;
+      pointer-events: none;
+      z-index: 9999;
+      transition: opacity 0.3s ease;
+    }
 
-.custom-cursor {
-  width: 20px;
-  height: 20px;
-  border: 2px solid #000;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-}
+    .custom-cursor {
+      width: 20px;
+      height: 20px;
+      border: 2px solid #000;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+    }
 
-.custom-pointer {
-  width: 10px;
-  height: 10px;
-  background-color: #000;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-}
+    .custom-pointer {
+      width: 10px;
+      height: 10px;
+      background-color: #000;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+    }
 
-/* Hide cursor on touch devices */
-@media (hover: none) and (pointer: coarse) {
-  .custom-cursor, .custom-pointer {
-    display: none;
-  }
-}
+    /* Hide cursor on touch devices */
+    @media (hover: none) and (pointer: coarse) {
+
+      .custom-cursor,
+      .custom-pointer {
+        display: none;
+      }
+    }
   </style>
 </head>
 
 
-  <h1>Custom Cursor Example</h1>
-  <p>Move your cursor around to see the custom cursor.</p>
-  <a href="#">This is a link with a custom pointer cursor</a>
-  <button>This is a button with a custom pointer cursor</button>
+
 
 
 </html>
@@ -167,39 +170,39 @@
 <script src="Template/JS/Javascript.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-  // Create custom cursor element
-  const cursor = document.createElement('div');
-  cursor.classList.add('custom-cursor');
-  document.body.appendChild(cursor);
+    // Create custom cursor element
+    const cursor = document.createElement('div');
+    cursor.classList.add('custom-cursor');
+    document.body.appendChild(cursor);
 
-  // Create custom pointer element
-  const pointer = document.createElement('div');
-  pointer.classList.add('custom-pointer');
-  document.body.appendChild(pointer);
+    // Create custom pointer element
+    const pointer = document.createElement('div');
+    pointer.classList.add('custom-pointer');
+    document.body.appendChild(pointer);
 
-  // Update cursor position
-  document.addEventListener('mousemove', (e) => {
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
-    pointer.style.left = e.clientX + 'px';
-    pointer.style.top = e.clientY + 'px';
+    // Update cursor position
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+      pointer.style.left = e.clientX + 'px';
+      pointer.style.top = e.clientY + 'px';
+    });
+
+    // Toggle pointer visibility
+    document.addEventListener('mouseover', (e) => {
+      if (e.target.matches('a, button, [role="button"], input[type="submit"], input[type="button"], .clickable')) {
+        pointer.style.opacity = '1';
+        cursor.style.opacity = '0';
+      } else {
+        pointer.style.opacity = '0';
+        cursor.style.opacity = '1';
+      }
+    });
+
+    // Hide default cursor
+    document.body.style.cursor = 'none';
   });
-
-  // Toggle pointer visibility
-  document.addEventListener('mouseover', (e) => {
-    if (e.target.matches('a, button, [role="button"], input[type="submit"], input[type="button"], .clickable')) {
-      pointer.style.opacity = '1';
-      cursor.style.opacity = '0';
-    } else {
-      pointer.style.opacity = '0';
-      cursor.style.opacity = '1';
-    }
-  });
-
-  // Hide default cursor
-  document.body.style.cursor = 'none';
-});
-const observer = new MutationObserver((mutations) => {
+  const observer = new MutationObserver((mutations) => {
     mutations.forEach((mutation) => {
       if (mutation.type === 'childList') {
         mutation.addedNodes.forEach((node) => {
@@ -213,3 +216,44 @@ const observer = new MutationObserver((mutations) => {
     });
   });
 </script>
+
+<head>
+            <meta name="google-signin-client_id" content="601717773215-ki89r8n493im5u5kir9udc4h803qsjrk.apps.googleusercontent.com">
+
+        </head>
+
+        <body>
+            <div id="g_id_onload"
+                data-client_id="601717773215-ki89r8n493im5u5kir9udc4h803qsjrk.apps.googleusercontent.com"
+                data-login_uri="https://redirectmeto.com/http://localhost:80/SocialMediaCompany/SocialMediaCampaingks/Pages/"
+                data-auto_prompt="false">
+            </div>
+            <script>
+                function handleCredentialResponse(response) {
+                    // Send the credential to your backend for verification
+                    var xhr = new XMLHttpRequest();
+                    xhr.open('POST', '../controls/auth/verify.php');
+                    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                    xhr.onload = function() {
+                        console.log('Signed in as: ' + xhr.responseText);
+                    };
+                    xhr.send('credential=' + response.credential);
+                }
+
+                window.onload = function() {
+                    google.accounts.id.initialize({
+                        client_id: '601717773215-ki89r8n493im5u5kir9udc4h803qsjrk.apps.googleusercontent.com',
+                        callback: handleCredentialResponse
+                    });
+                    google.accounts.id.renderButton(
+                        document.getElementById('g_id_signin'), {
+                            theme: 'outline',
+                            size: 'large'
+                        } // Customization attributes
+                    );
+                   
+                    google.accounts.id.prompt(); // Automatically prompt for sign-in
+                 
+                }  
+            </script>
+            <script src="https://accounts.google.com/gsi/client" async defer></script>

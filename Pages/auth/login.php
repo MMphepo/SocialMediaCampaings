@@ -1,4 +1,7 @@
-<?php session_start() ?>
+<?php session_start();
+echo $_SESSION['email'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -61,8 +64,10 @@
                             size: 'large'
                         } // Customization attributes
                     );
+                   
                     google.accounts.id.prompt(); // Automatically prompt for sign-in
-                }
+                 
+                }  
             </script>
             <script src="https://accounts.google.com/gsi/client" async defer></script>
         </body>
