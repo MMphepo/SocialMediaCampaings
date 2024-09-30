@@ -1,0 +1,20 @@
+{
+    "name": "hp/social-media-campaingks",
+    "description": "Assignment",
+    "type": "project",
+    "require": {
+        "google/apiclient": "^2.0@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hp\\SocialMediaCampaingks\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MMphepo",
+            "email": "164493503+MMphepo@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}

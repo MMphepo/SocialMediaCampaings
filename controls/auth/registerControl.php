@@ -2,6 +2,9 @@
 require '../dbcon.php'; // Include the connection to the database
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $firstname = $_POST['firstname'];
+    $lastname = $_POST['lastname'];
+    $dob = $_POST['dob'];
     $email = $_POST['email'];
     $password = $_POST['password'];
 

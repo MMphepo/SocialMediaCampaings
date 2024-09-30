@@ -1,5 +1,5 @@
 <?php
-$link = 'Template/CSS/styles.css';
+
 ?>
 <?php include './Template/navbar.php' ?>
 <div class="video-background">
@@ -7,7 +7,7 @@ $link = 'Template/CSS/styles.css';
     <source src="../media/720pFH.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  
+
 
   <section class="hero-sec">
     <div class="hero">
@@ -37,26 +37,41 @@ $link = 'Template/CSS/styles.css';
     <p>This div has a video background!</p>
   </div>
 </div>
-<section class="MostPopular">
+
+<section class="MostPopular section" id="scrollSection">
   <div class="top">
     <div class="content">
       <div class="cont-head">
-        <h1 class="head-text">Whatsapp</h1>
+        <h1 class="head-text" id="head-text">Whatsapp</h1>
       </div>
-      <div class="cont-body">
+      <div class="cont-body" id="cont-body">
         <p class="body-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit fuga itaque cupiditate, us iste non.</p>
       </div>
     </div>
   </div>
   <div class="bottom">
     <div class="cards">
-      <div class="card-1"><img src="../media/twitter.png" alt=""></div>
+      <div class="card-1" onclick="twitter()"><img src="../media/twitter.png" alt=""></div>
       <div class="card-2"><img src="../media/Fb.png" alt=""></div>
       <div class="card-3"><img src="../media/Whatsapp.png" alt=""></div>
       <div class="card-4"><img src="../media/IG.png" alt=""></div>
     </div>
   </div>
 
+  <div>
+  <rssapp-carousel id="tjcy1UHfdQtlCQpm"></rssapp-carousel><script src="https://widget.rss.app/v1/carousel.js" type="text/javascript" async></script>
+  </div>
+  <script>
+    function twitter() {
+      var headText = document.getElementById('head-text');
+      headText.innerText = 'Twitter';
+      headText.style.backgroundColor = 'rgba(0, 225, 255, 0.5)';
+      headText.style.backdropFilter = 'blur(10px)';
+      var contbody = document.getElementById('cont-body');
+      contbody.style.backgroundColor = 'rgba(0, 225, 255, 0.5)';
+      contbody.style.backdropFilter = 'blur(10px)';
+    }
+  </script>
 </section>
 
 <section class="Newsletter">
@@ -95,6 +110,106 @@ $link = 'Template/CSS/styles.css';
 </div>
 
 <!--  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Cursor Example</title>
+  <style>
+    /* Paste the custom cursor CSS here */
+    /* Custom cursor for the entire website */
+
+    .custom-cursor, .custom-pointer {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: opacity 0.3s ease;
+}
+
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-pointer {
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+/* Hide cursor on touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .custom-cursor, .custom-pointer {
+    display: none;
+  }
+}
+  </style>
+</head>
+
+
+  <h1>Custom Cursor Example</h1>
+  <p>Move your cursor around to see the custom cursor.</p>
+  <a href="#">This is a link with a custom pointer cursor</a>
+  <button>This is a button with a custom pointer cursor</button>
+
+
+</html>
 
 <script src="Template/JS/routes.js"></script>
 <script src="Template/JS/Javascript.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+  // Create custom cursor element
+  const cursor = document.createElement('div');
+  cursor.classList.add('custom-cursor');
+  document.body.appendChild(cursor);
+
+  // Create custom pointer element
+  const pointer = document.createElement('div');
+  pointer.classList.add('custom-pointer');
+  document.body.appendChild(pointer);
+
+  // Update cursor position
+  document.addEventListener('mousemove', (e) => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+    pointer.style.left = e.clientX + 'px';
+    pointer.style.top = e.clientY + 'px';
+  });
+
+  // Toggle pointer visibility
+  document.addEventListener('mouseover', (e) => {
+    if (e.target.matches('a, button, [role="button"], input[type="submit"], input[type="button"], .clickable')) {
+      pointer.style.opacity = '1';
+      cursor.style.opacity = '0';
+    } else {
+      pointer.style.opacity = '0';
+      cursor.style.opacity = '1';
+    }
+  });
+
+  // Hide default cursor
+  document.body.style.cursor = 'none';
+});
+const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      if (mutation.type === 'childList') {
+        mutation.addedNodes.forEach((node) => {
+          if (node.nodeType === Node.ELEMENT_NODE) {
+            updateCursorStyle(node);
+            node.querySelectorAll('a, button, [role="button"], input[type="submit"], input[type="button"], .clickable')
+              .forEach(updateCursorStyle);
+          }
+        });
+      }
+    });
+  });
+</script>

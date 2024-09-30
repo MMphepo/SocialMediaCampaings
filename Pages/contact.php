@@ -16,7 +16,7 @@
     };
     xhr.send();
 </script>
-<?php include('Template/navbar.php')   ?>
+<?php include('Template/navbar.php') ?>
   <script src="Template/JS/routes.js"></script>
   <script src="Template/JS/Javascript.js"></script>
 <h1>here</h1>

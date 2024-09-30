@@ -1,8 +1,12 @@
+*{
+    cursor: none !important;
+}
 body {
     padding: 0;
     margin: 0;
     box-sizing: unset;
 }
+
 #navi{
     position: sticky;
     top: 0;
@@ -85,20 +89,17 @@ nav .profile canvas {
     height: 100vh;
 
 }
-
 .content {
     width: 40%;
     padding-left: 4em;
     padding-top: 5em;
 
 }
-
 .cont-head {
     display: flex;
     margin-bottom: -1em;
 
 }
-
 .cont-body {
     border-bottom: 2px solid black;
     backdrop-filter: blur(10px);
@@ -373,6 +374,23 @@ ul>li:nth-child(4) {
     ;
 }
 
+.section {
+
+
+/* So we scroll to this section */
+    transition: transform 0.3s;
+  }
+
+  .fixed {
+    position: sticky;
+    top: 0;
+    width: 100%;
+  /*  transition: transform 0.3s; /* Start with no translation */
+  }
+
+  .moved {
+    transform: translateY(-40px); /* Move 40px upwards */
+  }
 .Newsletter {
     width: 100%;
     display: flex;
@@ -381,6 +399,7 @@ ul>li:nth-child(4) {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 70vh;
 
 }
 
@@ -503,3 +522,4 @@ ul>li:nth-child(4) {
     rgba(0, 255, 0, 1);
 }
     
+

@@ -33,16 +33,88 @@
     </style>
 </head>
 <body>
-    <div class="video-background">
-        <video autoplay loop muted playsinline>
-            <source src="../media/720pFH.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <?php include'./Template/navbar.php' ?>
-        <div class="content">
-            <h1>Welcome to My Website</h1>
-            <p>This div has a video background!</p>
-        </div>
-    </div>
+
+        <?php 
+        include'./Template/navbar.php';
+        ?>
+
+
+
+/<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Safety Tips</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input[type="text"] {
+            width: 300px;
+            padding: 8px;
+        }
+        input[type="button"] {
+            padding: 8px 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="button"]:hover {
+            background-color: #45a049;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Search Safety Tips</h2>
+
+<input type="text" id="searchInput" placeholder="Enter keyword...">
+<input type="button" value="Search" id="searchButton">
+
+<h3>Search Results:</h3>
+<ul id="resultsList"></ul>
+
+<script>
+    document.getElementById('searchButton').addEventListener('click', function() {
+        const searchQuery = document.getElementById('searchInput').value;
+
+        // Fetch search results from the API
+        fetch(`search_api.php?search=${encodeURIComponent(searchQuery)}`)
+            .then(response => response.json())
+            .then(data => {
+                const resultsList = document.getElementById('resultsList');
+                resultsList.innerHTML = ''; // Clear previous results
+
+                if (data.error) {
+                    resultsList.innerHTML = `<li>${data.error}</li>`;
+                } else if (data.message) {
+                    resultsList.innerHTML = `<li>${data.message}</li>`;
+                } else {
+                    data.forEach(item => {
+                        const li = document.createElement('li');
+                        li.innerHTML = `<strong>${item.title}</strong><br>${item.description}`;
+                        resultsList.appendChild(li);
+                    });
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    });
+</script>
+
 </body>
 </html>

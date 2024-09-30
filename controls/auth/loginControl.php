@@ -1,6 +1,6 @@
 <?php
 session_start();
-require '../dbcon.php'; // Include the connection to the database
+require '../dbcon.php';
 
 // Enable error reporting for debugging (remove in production)
 error_reporting(E_ALL);
