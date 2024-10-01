@@ -1,3 +1,4 @@
+function typer(){
 function fetchTextContent() {
   const sourceElement = document.getElementById("content-source");
   const paragraphs = sourceElement.querySelectorAll('p');
@@ -5,10 +6,7 @@ function fetchTextContent() {
   return Array.from(paragraphs).map(p => p.textContent.trim());
 }
 
-// Get the dynamic text lines
 const lines = fetchTextContent();
-
-// Initialize variables
 let lineIndex = 0;
 let charIndex = 0;
 const typingSpeed = 50; // Milliseconds between each character
@@ -37,11 +35,56 @@ function typeLine() {
     }
   }
 }
-
-// Start the typing animation when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
   typeLine();
 });
+}
+
+// ---------Custom Cursor-------------
+function customcursor(){
+document.addEventListener('DOMContentLoaded', () => {
+  const cursor = document.createElement('div');
+  cursor.classList.add('custom-cursor');
+  document.body.appendChild(cursor);
+
+  const pointer = document.createElement('div');
+  pointer.classList.add('custom-pointer');
+  document.body.appendChild(pointer);
+
+  document.addEventListener('mousemove', (e) => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+    pointer.style.left = e.clientX + 'px';
+    pointer.style.top = e.clientY + 'px';
+  });
+
+  document.addEventListener('mouseover', (e) => {
+    if (e.target.matches('a, button, [role="button"], input[type="submit"], input[type="button"], .clickable')) {
+      pointer.style.opacity = '1';
+      cursor.style.opacity = '0';
+    } else {
+      pointer.style.opacity = '0';
+      cursor.style.opacity = '1';
+    }
+  });
+
+  document.body.style.cursor = 'none';
+});
+
+const observer = new MutationObserver((mutations) => {
+  mutations.forEach((mutation) => {
+    if (mutation.type === 'childList') {
+      mutation.addedNodes.forEach((node) => {
+        if (node.nodeType === Node.ELEMENT_NODE) {
+          updateCursorStyle(node);
+          node.querySelectorAll('a, button, [role="button"], input[type="submit"], input[type="button"], .clickable')
+            .forEach(updateCursorStyle);
+        }
+      });
+    }
+  });
+});
+}
 
 
 const video = document.getElementById('background-video');

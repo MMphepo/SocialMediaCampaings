@@ -54,9 +54,9 @@
   <div class="bottom">
     <div class="cards">
       <div class="card-1" onclick="twitter()"><img src="../media/twitter.png" alt=""></div>
-      <div class="card-2"><img src="../media/Fb.png" alt=""></div>
-      <div class="card-3"><img src="../media/Whatsapp.png" alt=""></div>
-      <div class="card-4"><img src="../media/IG.png" alt=""></div>
+      <div class="card-2" onclick="facebook()"><img src="../media/Fb.png" alt=""></div>
+      <div class="card-3" onclick="whatsapp()"><img src="../media/Whatsapp.png" alt=""></div>
+      <div class="card-4" onclick="instagram()"><img src="../media/IG.png" alt=""></div>
     </div>
   </div>
 
@@ -64,10 +64,57 @@
     function twitter() {
       var headText = document.getElementById('head-text');
       headText.innerText = 'Twitter';
-      headText.style.backgroundColor = 'rgba(0, 225, 255, 0.5)';
+      headText.style.removeProperty('background');
+      headText.style.removeProperty('opacity');
+      headText.style.backgroundColor = 'rgb(49 255 236 / 68%)';
+      headText.style.backdropFilter = 'blur(10px)';
+
+      var contbody = document.getElementById('cont-body');
+      contbody.style.removeProperty('background');
+      contbody.style.removeProperty('opacity');
+      contbody.style.backgroundColor = 'rgb(49 255 236 / 68%)';
+      contbody.style.backdropFilter = 'blur(10px)';
+    }
+
+    function facebook() {
+      var headText = document.getElementById('head-text');
+      headText.innerText = 'Facebook';
+      headText.style.removeProperty('background');
+      headText.style.removeProperty('opacity');
+      headText.style.backgroundColor = 'rgb(8 102 255 / 50%)';
+      headText.style.backdropFilter = 'blur(10px)';
+
+      var contbody = document.getElementById('cont-body');
+      contbody.style.removeProperty('background');
+      contbody.style.removeProperty('opacity');
+      contbody.style.backgroundColor = 'rgb(8 102 255 / 50%)';
+      contbody.style.backdropFilter = 'blur(10px)';
+    }
+
+    function whatsapp() {
+      var headText = document.getElementById('head-text');
+      headText.innerText = 'Whatsapp';
+      headText.style.removeProperty('background');
+      headText.style.removeProperty('opacity');
+      headText.style.backgroundColor = 'rgb(11 215 63 / 50%)';
+      headText.style.backdropFilter = 'blur(10px)';
+
+      var contbody = document.getElementById('cont-body');
+      contbody.style.removeProperty('background');
+      contbody.style.removeProperty('opacity');
+      contbody.style.backgroundColor = 'rgb(11 215 63 / 50%)';
+      contbody.style.backdropFilter = 'blur(10px)';
+    }
+
+    function instagram() {
+      var headText = document.getElementById('head-text');
+      headText.innerText = 'Instagram';
+      headText.style.opacity = 0.5;
+      headText.style.background = 'linear-gradient(23deg, #ec8211, #e6683c, #dc2743, #cc2366, #d8139a)';
       headText.style.backdropFilter = 'blur(10px)';
       var contbody = document.getElementById('cont-body');
-      contbody.style.backgroundColor = 'rgba(0, 225, 255, 0.5)';
+      contbody.style.opacity = 0.5;
+      contbody.style.background = 'linear-gradient(23deg, #ec8211, #e6683c, #dc2743, #cc2366, #d8139a)';
       contbody.style.backdropFilter = 'blur(10px)';
     }
   </script>
@@ -104,39 +151,7 @@
     /* Paste the custom cursor CSS here */
     /* Custom cursor for the entire website */
 
-    .custom-cursor,
-    .custom-pointer {
-      position: fixed;
-      pointer-events: none;
-      z-index: 9999;
-      transition: opacity 0.3s ease;
-    }
 
-    .custom-cursor {
-      width: 20px;
-      height: 20px;
-      border: 2px solid #000;
-      border-radius: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    .custom-pointer {
-      width: 10px;
-      height: 10px;
-      background-color: #000;
-      border-radius: 50%;
-      transform: translate(-50%, -50%);
-      opacity: 0;
-    }
-
-    /* Hide cursor on touch devices */
-    @media (hover: none) and (pointer: coarse) {
-
-      .custom-cursor,
-      .custom-pointer {
-        display: none;
-      }
-    }
   </style>
 </head>
 
@@ -149,52 +164,8 @@
 <script src="Template/JS/routes.js"></script>
 <script src="Template/JS/Javascript.js"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    // Create custom cursor element
-    const cursor = document.createElement('div');
-    cursor.classList.add('custom-cursor');
-    document.body.appendChild(cursor);
-
-    // Create custom pointer element
-    const pointer = document.createElement('div');
-    pointer.classList.add('custom-pointer');
-    document.body.appendChild(pointer);
-
-    // Update cursor position
-    document.addEventListener('mousemove', (e) => {
-      cursor.style.left = e.clientX + 'px';
-      cursor.style.top = e.clientY + 'px';
-      pointer.style.left = e.clientX + 'px';
-      pointer.style.top = e.clientY + 'px';
-    });
-
-    // Toggle pointer visibility
-    document.addEventListener('mouseover', (e) => {
-      if (e.target.matches('a, button, [role="button"], input[type="submit"], input[type="button"], .clickable')) {
-        pointer.style.opacity = '1';
-        cursor.style.opacity = '0';
-      } else {
-        pointer.style.opacity = '0';
-        cursor.style.opacity = '1';
-      }
-    });
-
-    // Hide default cursor
-    document.body.style.cursor = 'none';
-  });
-  const observer = new MutationObserver((mutations) => {
-    mutations.forEach((mutation) => {
-      if (mutation.type === 'childList') {
-        mutation.addedNodes.forEach((node) => {
-          if (node.nodeType === Node.ELEMENT_NODE) {
-            updateCursorStyle(node);
-            node.querySelectorAll('a, button, [role="button"], input[type="submit"], input[type="button"], .clickable')
-              .forEach(updateCursorStyle);
-          }
-        });
-      }
-    });
-  });
+customcursor();
+typer();
 </script>
 
 <head>

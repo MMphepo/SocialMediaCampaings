@@ -117,6 +117,7 @@ nav .profile canvas {
     border-radius: 1.4em;
     margin-block: 1em;
     background-color: #1ed91159;
+    transition: .5s linear;
 }
 
 .head-text {
@@ -128,6 +129,7 @@ nav .profile canvas {
     font-size: 3vw;
     font-family: Georgia, serif;
     padding: 0.5em;
+    transition: .5s linear;
 }
 
 .body-text {
@@ -347,7 +349,7 @@ ul>li:nth-child(4) {
 
 .cards div {
     flex: 1;
-
+    transition: .5s;
     height: 20vh;
 }
 
@@ -382,7 +384,7 @@ ul>li:nth-child(4) {
 
 .card-4 {
     background: linear-gradient(23deg, #ec8211, #e6683c, #dc2743, #cc2366, #d8139a);
-    ;
+    
 }
 
 .section {
@@ -571,4 +573,132 @@ ul>li:nth-child(4) {
 .rssfeed{
     padding: 4em;
     background: rgb(245, 245, 247);
+}
+
+.custom-cursor,
+.custom-pointer {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: opacity 0.3s ease;
+}
+
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-pointer {
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+/* Hide cursor on touch devices */
+@media (hover: none) and (pointer: coarse) {
+
+  .custom-cursor,
+  .custom-pointer {
+    display: none;
+  }
+}
+
+/* information page styles */
+.Mission {
+    padding: 3em;
+    display: flex;
+}
+.MissionLeft{
+    width: 60%;
+}
+.Mission .title{
+    font-size: 2em;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.Mission .Text{
+    text-align: justify;
+    color: gray;
+    padding-inline-end: 2em;
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+.MissionBottom{
+    margin-top: 1em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+.MissionBottom>div:nth-child(1){
+    background-color: black;
+    color: white;
+}
+.MissionBottom div{
+    width: 44%;
+    min-width: 11.5em;
+    border: 2px solid #a3a3a3;
+    padding: 0.5em;
+    border-radius: 1em;
+    
+}
+.MissionBottom div h2{
+    font-size: 1.2em;
+}
+.MissionBottom div p{
+    color: gray;
+    font-size: 1.2em;
+}
+.MissionRight{
+    background-image: url(https://images.pexels.com/photos/4143797/pexels-photo-4143797.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 1em;
+}
+.MoreMission{
+    padding: 4em;
+    margin: auto;
+    background-color: #000;
+    color: white !important;
+}
+.MMtop{
+    text-align: center;
+    color: white;
+    padding: 1em;
+
+}
+.MMtop2 h1{
+    font-size: 2em;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.moreInfo{
+    margin-top: 1em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4em;
+}
+.moreInfo>div{
+    width: 30%;
+    border: 2px solid #a3a3a3;
+    padding: 0.5em;
+    border-radius: 1em;
+    
+}
+.moreInfo .cardtext {
+    color: gray;
+    line-height: 1.5em;
+    margin-block: 1em;
 }
