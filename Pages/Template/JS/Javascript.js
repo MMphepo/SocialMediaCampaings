@@ -41,24 +41,39 @@ document.addEventListener('DOMContentLoaded', () => {
 }
 
 // ---------Custom Cursor-------------
-function customcursor(){
-document.addEventListener('DOMContentLoaded', () => {
-  const cursor = document.createElement('div');
-  cursor.classList.add('custom-cursor');
-  document.body.appendChild(cursor);
 
-  const pointer = document.createElement('div');
-  pointer.classList.add('custom-pointer');
-  document.body.appendChild(pointer);
 
-  document.addEventListener('mousemove', (e) => {
+function customCursor() {
+   let cursor, pointer;
+
+  document.addEventListener('DOMContentLoaded', () => {
+    cursor = document.createElement('div');
+    cursor.classList.add('custom-cursor');
+    document.body.appendChild(cursor);
+
+    pointer = document.createElement('div');
+    pointer.classList.add('custom-pointer');
+    document.body.appendChild(pointer);
+
+    document.addEventListener('mousemove', handleMouseMove);
+    document.addEventListener('mouseover', handleMouseOver);
+
+    document.body.style.cursor = 'none';
+
+    // Start observing the document body for changes
+    observer.observe(document.body, { childList: true, subtree: true });
+  });
+
+  function handleMouseMove(e) {
     cursor.style.left = e.clientX + 'px';
     cursor.style.top = e.clientY + 'px';
     pointer.style.left = e.clientX + 'px';
     pointer.style.top = e.clientY + 'px';
-  });
+    
+    updateCursorColor(e.target);
+  }
 
-  document.addEventListener('mouseover', (e) => {
+  function handleMouseOver(e) {
     if (e.target.matches('a, button, [role="button"], input[type="submit"], input[type="button"], .clickable')) {
       pointer.style.opacity = '1';
       cursor.style.opacity = '0';
@@ -66,26 +81,70 @@ document.addEventListener('DOMContentLoaded', () => {
       pointer.style.opacity = '0';
       cursor.style.opacity = '1';
     }
+    
+    updateCursorColor(e.target);
+  }
+
+  const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      if (mutation.type === 'childList') {
+        mutation.addedNodes.forEach((node) => {
+          if (node.nodeType === Node.ELEMENT_NODE) {
+            updateCursorStyle(node);
+            node.querySelectorAll('a, button, [role="button"], input[type="submit"], input[type="button"], .clickable')
+              .forEach(updateCursorStyle);
+          }
+        });
+      }
+    });
   });
 
-  document.body.style.cursor = 'none';
-});
-
-const observer = new MutationObserver((mutations) => {
-  mutations.forEach((mutation) => {
-    if (mutation.type === 'childList') {
-      mutation.addedNodes.forEach((node) => {
-        if (node.nodeType === Node.ELEMENT_NODE) {
-          updateCursorStyle(node);
-          node.querySelectorAll('a, button, [role="button"], input[type="submit"], input[type="button"], .clickable')
-            .forEach(updateCursorStyle);
-        }
-      });
+  function updateCursorColor(element) {
+    const bgColor = getComputedStyle(element).backgroundColor;
+    const rgb = bgColor.match(/\d+/g);
+    
+    if (rgb) {
+      const [r, g, b] = rgb.map(Number);
+      
+      // Check if the background is black (or very dark)
+      if (r <= 10 && g <= 10 && b <= 10) {
+        setCursorColor('green');
+      }
+      // Check if the background is white (or very light)
+      else if (r >= 245 && g >= 245 && b >= 245) {
+        setCursorColor('black');
+      }
+      else {
+        // For other colors, use the brightness calculation
+        const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+        setCursorColor(brightness < 128 ? 'white' : 'black');
+      }
+    } else {
+      // Default to black if unable to determine background color
+      setCursorColor('black');
     }
-  });
-});
-}
+  }
 
+  function setCursorColor(color) {
+    cursor.style.borderColor = color;
+    pointer.style.backgroundColor = color;
+  }
+
+  function updateCursorStyle(element) {
+    element.addEventListener('mouseover', () => {
+      pointer.style.opacity = '1';
+      cursor.style.opacity = '0';
+      updateCursorColor(element);
+    });
+
+    element.addEventListener('mouseout', () => {
+      pointer.style.opacity = '0';
+      cursor.style.opacity = '1';
+      updateCursorColor(document.body);
+    });
+  }
+  html
+}
 
 const video = document.getElementById('background-video');
 const btn = document.getElementById('video-control');

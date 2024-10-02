@@ -1,3 +1,6 @@
+function toHome() {
+  window.location.href = "index.php";
+}
 function toSignUp() {
   window.location.href = "auth/register.php";
 }
@@ -24,7 +27,7 @@ function toMostPop() {
   window.location.href = "mostPopular.php";
 }
 function toParents() {
-  window.location.href = "parents.php";
+  window.location.href = "parentsHelp.php";
 }
 function toLogin() {
   window.location.href = "auth/login.php";

@@ -164,7 +164,7 @@
 <script src="Template/JS/routes.js"></script>
 <script src="Template/JS/Javascript.js"></script>
 <script>
-customcursor();
+customCursor();
 typer();
 </script>
 

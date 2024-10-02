@@ -16,7 +16,7 @@
         <div class="icon">SMC</div>
         <div class="links">
             <ul>
-                <li>Home</li>
+                <li onclick="toHome()">Home</li>
                 <li onclick="toContact()">Contact</li>
                 <li onclick="toMostPop()" >Popular Apps</li>
                 <li>

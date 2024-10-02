@@ -1,5 +1,6 @@
 *{
     cursor: none !important;
+    font-family: cursive;
 }
 body {
     padding: 0;
@@ -691,14 +692,95 @@ ul>li:nth-child(4) {
     gap: 1.4em;
 }
 .moreInfo>div{
-    width: 30%;
+    width: 29%;
     border: 2px solid #a3a3a3;
-    padding: 0.5em;
+    padding: 1em;
     border-radius: 1em;
-    
-}
+}e
 .moreInfo .cardtext {
     color: gray;
     line-height: 1.5em;
     margin-block: 1em;
 }
+.custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border: 3px solid black;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+  }
+  
+  .custom-pointer {
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+  } 
+    /* .custom-cursor, .custom-pointer {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    pointer-events: none; /* Prevent interference with mouse events 
+  }
+
+  .custom-cursor {
+    border: 2px solid black; /* Set initial border color 
+    z-index: 9999; /* Ensure it appears above other elements 
+  }
+
+  .custom-pointer {
+    background-color: black; /* Set initial background color 
+    z-index: 9998;
+    width: 5px;
+    height: 5px;
+  } */
+    /* Hide cursor on touch devices */
+  @media (hover: none) and (pointer: coarse) {
+    .custom-cursor, .custom-pointer {
+      display: none;
+    }
+  }
+  .ParentsSection{
+    padding: 4em;
+    padding-top: 0;
+  }
+  .p-top h1{
+    text-align: center;
+    font-size: 3em;
+    text-transform: capitalize;
+    
+  }
+  .Parent-info-cont{
+    justify-content: space-around;
+    background: rgb(245, 245, 247);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 2em;
+    border-radius: 1em;
+  }
+  .parent-info{
+    width: 40%;
+    min-width: 25em;
+    border: 2px solid #a3a3a3;
+    padding: 1em;
+    border-radius: 1em;
+  }
+  .parent-info p{
+    color: gray;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-block: 1em;
+  }
+  .parent-info img{
+    height: 15em;
+    width: 100%;
+    border-radius: 1em;
+    object-fit: cover;
+  }
