@@ -1,5 +1,5 @@
 <?php
-
+$title ="Home Page";
 ?>
 <?php include './Template/navbar.php' ?>
 <div class="video-background">

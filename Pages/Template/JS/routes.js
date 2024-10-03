@@ -24,7 +24,7 @@ function toLive() {
   window.location.href = "liveStreaming.php";
 }
 function toMostPop() {
-  window.location.href = "mostPopular.php";
+  window.location.href = "mostPopularApps.php";
 }
 function toParents() {
   window.location.href = "parentsHelp.php";

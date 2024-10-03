@@ -143,7 +143,6 @@ function customCursor() {
       updateCursorColor(document.body);
     });
   }
-  html
 }
 
 const video = document.getElementById('background-video');

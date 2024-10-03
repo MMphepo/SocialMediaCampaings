@@ -1,5 +1,7 @@
 <header class="LiveStreaming">
-    <?php include './Template/navbar.php' ?>
+    <?php
+    $title = 'Live Streaming';
+    include './Template/navbar.php' ?>
     <div class="L-intro">
         <h1>What is Livestreaming?</h1>
         <p>
