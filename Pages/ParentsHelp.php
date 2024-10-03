@@ -1,5 +1,6 @@
 <?php
-include './Template/navbar.php'
+$title = 'How Parents Can Help';
+include './Template/navbar.php';
 ?>
 <section class="ParentsSection">
     <div class="p-top">

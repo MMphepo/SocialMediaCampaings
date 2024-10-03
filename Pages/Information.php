@@ -1,4 +1,5 @@
 <?php
+$title = 'Information Page';
 include 'Template/navbar.php';
 ?>
 <section class="Mission">
