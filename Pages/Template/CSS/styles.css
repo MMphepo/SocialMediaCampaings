@@ -859,11 +859,13 @@ e .moreInfo .cardtext {
     color: white;
     padding-top: 1em;
 }
+
 .L-header>h1 {
     font-size: 2em;
     padding: 2em;
     text-transform: capitalize;
 }
+
 .L-content {
     display: flex;
     justify-content: space-around;
@@ -872,17 +874,20 @@ e .moreInfo .cardtext {
     padding: 2em;
     border-radius: 1em;
 }
-.L-info{
+
+.L-info {
     width: 20%;
     min-width: 20em;
     border: 2px solid #a3a3a3;
     padding: 1em;
     border-radius: 1em;
 }
+
 .L-info h1 {
     font-size: 1.5em;
     text-transform: capitalize;
 }
+
 .L-info p {
     color: gray;
     font-size: 1.2em;
@@ -896,7 +901,8 @@ e .moreInfo .cardtext {
     border-radius: 1em;
     object-fit: cover;
 }
-.L-haras{
+
+.L-haras {
     margin: 4em;
     border: 1px solid black;
     overflow: hidden !important;
@@ -904,10 +910,12 @@ e .moreInfo .cardtext {
     border-radius: 2em;
     display: flex;
 }
-.L-haras .cont{
+
+.L-haras .cont {
     padding: 1em;
 }
-.L-balance{
+
+.L-balance {
     margin: 4em;
     border: 1px solid black;
     overflow: hidden !important;
@@ -915,13 +923,14 @@ e .moreInfo .cardtext {
     border-radius: 2em;
     display: flex;
 }
-.L-balance .cont{
+
+.L-balance .cont {
     padding: 1em;
 }
 
 
 /* -----------------contact page styles------------------- */
-.contHeadSection{
+.contHeadSection {
     height: 30em;
     background-image: url(../../../media/contact2D.jpg);
     background-size: cover;
@@ -929,23 +938,27 @@ e .moreInfo .cardtext {
     background-repeat: no-repeat;
     padding-top: 1em;
 }
+
 .contHeadSection .head h1 {
     color: white;
     font-size: 5em;
     text-align: center;
     text-transform: capitalize;
 }
-.contSection{
+
+.contSection {
     width: 80%;
     height: 30em;
     margin: auto;
     display: flex;
     margin-top: 5em;
 }
-.C-left{
+
+.C-left {
     width: 60%;
 }
-.C-emp input{
+
+.C-emp input {
     margin: 1em;
     padding: 1em;
     width: 45%;
@@ -953,7 +966,8 @@ e .moreInfo .cardtext {
     border-radius: 2em;
     background-color: lightgray !important;
 }
-.C-msg input{
+
+.C-msg input {
     margin: 1em;
     display: block;
     padding: 1em;
@@ -962,7 +976,8 @@ e .moreInfo .cardtext {
     border-radius: 2em;
     background-color: lightgrey;
 }
-.C-msg textarea{
+
+.C-msg textarea {
     background-color: lightgray;
     border-radius: 2em;
     border: none;
@@ -970,7 +985,8 @@ e .moreInfo .cardtext {
     width: 95%;
     padding: 1em;
 }
-.C-left input[type="submit"]{
+
+.C-left input[type="submit"] {
     margin: 1em;
     padding: 1em 3em;
     background-color: #333;
@@ -979,17 +995,21 @@ e .moreInfo .cardtext {
     border-radius: 2em;
     cursor: pointer;
 }
-.policy{
+
+.policy {
     display: flex;
     justify-content: space-between;
 }
-.policy div{
+
+.policy div {
     display: flex;
     align-items: center;
 }
-.policy input[type="checkbox"]{
+
+.policy input[type="checkbox"] {
     cursor: pointer;
 }
+
 .C-right {
     width: 40%;
     height: 100%;
@@ -1001,7 +1021,8 @@ e .moreInfo .cardtext {
     border-radius: 2em;
     overflow: hidden;
 }
-.R-content{
+
+.R-content {
     position: relative;
     top: 0;
     padding: 1em;
@@ -1011,16 +1032,19 @@ e .moreInfo .cardtext {
     padding-top: 1em;
     background-color: rgba(128, 128, 128, 0.493);
 }
-.R-content h2{
+
+.R-content h2 {
     text-align: center;
     font-size: 2em;
 }
-.R-content p{
+
+.R-content p {
     text-align: center;
     font-size: 1.8vw;
     line-height: 1.5em;
 }
-.R-content input{
+
+.R-content input {
     margin-block: 1em;
     padding: 0.6em;
     border: none !important;
@@ -1031,12 +1055,14 @@ e .moreInfo .cardtext {
     background-color: white !important;
     font-size: 1.2em;
 }
+
 .R-content input[type="submit"] {
     background-color: black !important;
     color: white;
     border: none !important;
 
 }
+
 .C-details {
     width: 80%;
     margin: 9em auto 3em !important;
@@ -1045,7 +1071,8 @@ e .moreInfo .cardtext {
     gap: 2em;
 
 }
-.details{
+
+.details {
     width: 27%;
     min-height: 11em;
     padding: 1em;
@@ -1053,53 +1080,63 @@ e .moreInfo .cardtext {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     /* border: 1px solid gray !important; */
 }
-.details .d-top{
+
+.details .d-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
 }
-i{
+
+i {
     width: 20%;
 }
-.d-top i img{
+
+.d-top i img {
     width: 100%;
     height: auto;
 }
-.d-top p{
+
+.d-top p {
     font-size: 1.4em;
 }
-.d-text{
+
+.d-text {
     margin-top: 0.5em;
 }
-.C-details>.details:nth-child(1){
+
+.C-details>.details:nth-child(1) {
     background-color: gray !important;
 }
-.C-details>.details:nth-child(2){
+
+.C-details>.details:nth-child(2) {
     background-color: lightgray !important;
 }
-.C-Map{
+
+.C-Map {
     width: 80%;
     margin: auto !important;
     border-radius: 2em;
     overflow: hidden;
     border: 1px solid black !important;
 }
-.Map{
+
+.Map {
     width: 100%;
     height: 300px;
     margin: 0 auto;
     border: none !important;
 }
+
 @media screen and (min-width: 982px) {
-    .R-content p{
+    .R-content p {
         font-size: 1.2em;
     }
-    }
+}
 
 
 /* ----------------------legislation and guidance page---------------------- */
-.Legi-head{
+.Legi-head {
     background-image: url(https://images.pexels.com/photos/6077326/pexels-photo-6077326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-size: cover;
     background-position: center;
@@ -1108,16 +1145,18 @@ i{
     padding-top: 1em;
     height: 33em;
 }
-.L-head>h1{
+
+.L-head>h1 {
     color: white;
     font-size: 3em;
     text-align: center;
     text-shadow: -1px 1px 0 #000,
-                 1px 1px 0 #000,
-                 1px -1px 0 #000,
-                 -1px -1px 0 #000;
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
 
 }
+
 .L-headText {
     margin-top: 10em;
     color: white;
@@ -1125,17 +1164,20 @@ i{
     padding-left: 5em;
     line-height: 1.5em;
 }
-.LG-content{
+
+.LG-content {
     width: 90%;
     margin: auto;
 }
-.LG-sec{
+
+.LG-sec {
     padding: 5em 0;
     display: flex;
     border-bottom: 1px solid gray;
 
 }
-.LG-num{
+
+.LG-num {
     display: flex;
     background-color: white;
     width: 10%;
@@ -1143,18 +1185,125 @@ i{
     padding-left: 0.5em;
     font-size: 4em;
 }
-.LG-img{
+
+.LG-img {
     width: 45%;
 }
-.LG-img img{
+
+.LG-img img {
     width: 100%;
     object-fit: cover;
     object-position: center;
 }
-.LG-cont{
+
+.LG-cont {
     width: 45%;
     padding: 1em;
 }
 
 /* .................... register page styles---------------------- */
 
+.register {
+    display: flex;
+    width: 80%;
+    height: 40em;
+    border-radius: 2em;
+    margin: auto;
+    font-size: 0.9em;
+    margin-top: 3em;
+    overflow: hidden;
+}
+
+.reg-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-image: url(https://img.freepik.com/free-vector/technology-background-with-waves_23-2148451910.jpg?ga=GA1.1.1841500845.1722947546);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no repeat;
+}
+
+.reg-right {
+    width: 50%;
+    padding: 1em 4em;
+    background-color: white;
+}
+
+.reg-names {
+    display: flex;
+    margin-top: 1em;
+    justify-content: space-between;
+}
+
+.reg-names>div {
+    width: 45%;
+}
+
+.reg-names input {
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin-top: 7px;
+}
+
+#registerForm>.reg-input>input,
+#registerFormd input[type="text"] {
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin-top: 5px;
+
+}
+
+#registerForm>.reg-input {
+    margin-top: 1em;
+}
+
+/* #registerForm input[type="submit"]{
+    width: 103%;
+} */
+.reg-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.reg-right #policy input[type="submit"] {
+    padding: 0.2em 0.9em;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+#policy {
+    margin-top: 0.7em;
+
+}
+
+#registerForm input {
+    background-color: lightgray;
+}
+
+#registerForm .g_id_signin {
+    margin: 1em;
+}
+
+.reg-welcome {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 3em;
+    width: 85%;
+    height: 85%;
+    border-radius: 1em;
+    background-color: rgb(255 255 255 / 13%);
+    backdrop-filter: blur(4px);
+}
+.reg-welcome div {
+    margin: auto !important;
+    max-width: 6em;
+    text-align: left;
+
+}
