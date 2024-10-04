@@ -91,7 +91,7 @@ function customCursor() {
         mutation.addedNodes.forEach((node) => {
           if (node.nodeType === Node.ELEMENT_NODE) {
             updateCursorStyle(node);
-            node.querySelectorAll('a, button, [role="button"], input[type="submit"], input[type="button"], .clickable')
+            node.querySelectorAll('a, button, [role="button"], input[type="submit"], input[type="button"], input, .clickable')
               .forEach(updateCursorStyle);
           }
         });

@@ -1307,3 +1307,82 @@ i {
     text-align: left;
 
 }
+/* -----------------------login page styles---------------------------- */
+
+.Login {
+    display: flex;
+    width: 80%;
+    height: 40em;
+    border-radius: 2em;
+    margin: auto;
+    font-size: 0.9em;
+    margin-top: 3em;
+    overflow: hidden;
+}
+.log-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-image: url(https://img.freepik.com/free-vector/technology-background-with-waves_23-2148451910.jpg?ga=GA1.1.1841500845.1722947546);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no repeat;
+}
+.log-left {
+    width: 45%;
+    padding: 7em 3em;
+    background-color: white;
+}
+.log-right .log-welcome {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 3em;
+    width: 85%;
+    height: 85%;
+    border-radius: 1em;
+    background-color: rgb(255 255 255 / 13%);
+    backdrop-filter: blur(4px);
+
+}
+.log-welcome div{
+    margin: auto!important;
+    max-width: 6em;
+    text-align: left;
+}
+.log-input input{
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin-top: 20px;
+}
+.forgot{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.Login input[type="submit"]{
+    padding: 0.2em 0.9em;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 3em;
+    width: 100%;
+}
+.log-line{
+    display: flex;
+}
+.log-line hr {
+    transform: rotate(90deg);
+    height: 3em;
+
+}
+.google{
+    display: flex;
+    justify-content: center;
+}
+.dont-have-account{
+    margin-top: 1em;
+    text-align: center;
+}

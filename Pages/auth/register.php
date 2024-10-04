@@ -67,7 +67,7 @@ $style = "";
                     data-shape="rectangular"
                     data-logo_alignment="left">
                 </div>
-                <div>Already have an acount <a href="#">Login</a></div>
+                <div>Already have an acount <a href="./login.php"> Login</a></div>
             </form>
         </div>
     </section>
