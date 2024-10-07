@@ -13,20 +13,20 @@
 
 <body>
     <nav id="navi">
-        <div class="icon">SMC</div>
+        <div class="icon" onclick="toHome()">SMC</div>
         <div class="links">
             <ul>
                 <li onclick="toHome()">Home</li>
                 <li onclick="toContact()">Contact</li>
-                <li onclick="toMostPop()" >Popular Apps</li>
+                <li onclick="toMostPop()">Popular Apps</li>
+                <li onclick="toInfo()">Information</li>
                 <li>
                     <div class="dropdown">
-                        <div class="dropbtn" onclick="toInfo()">Information</div>
+                        <div class="dropbtn">More Info</div>
                         <div class="dropdown-content">
-                            <a onclick="toParents()" >How Parents can Help</a>
+                            <a onclick="toParents()">How Parents can Help</a>
                             <a onclick="toLive()">Livestreaming</a>
                             <a onclick="toLegislation()">Legislation</a>
-
                         </div>
                     </div>
                 </li>
@@ -43,4 +43,14 @@
         </div>
 
         <div class="search"><canvas id="searchIcon" width="50" height="50"></canvas></div>
+        <div class="links2">
+            <div class="dropdown">
+                <div class="dropbtn">More Info</div>
+                <div class="dropdown-content">
+                    <a onclick="toParents()">How Parents can Help</a>
+                    <a onclick="toLive()">Livestreaming</a>
+                    <a onclick="toLegislation()">Legislation</a>
+                </div>
+            </div>
+        </div>
     </nav>

@@ -1,5 +1,5 @@
 <?php
-$title ="Home Page";
+$title = "Home Page";
 ?>
 <?php include './Template/navbar.php' ?>
 <div class="video-background">
@@ -130,8 +130,10 @@ $title ="Home Page";
   </div>
 </section>
 <section class="rssfeed">
-  <rssapp-wall id="toeg8jwamcdIUqvn"></rssapp-wall>
-  <script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
+<div class="tagshop" style="width:100%;height:100%;overflow: auto;">
+  <div class="tagshop-socialwall" data-wall-id="17879" data-source="website"></div>
+  <script src="https://widget.tagshop.ai/embed-lite.min.js" type="text/javascript"></script>
+</div>
 </section>
 
 
@@ -150,8 +152,6 @@ $title ="Home Page";
   <style>
     /* Paste the custom cursor CSS here */
     /* Custom cursor for the entire website */
-
-
   </style>
 </head>
 
@@ -164,8 +164,8 @@ $title ="Home Page";
 <script src="Template/JS/routes.js"></script>
 <script src="Template/JS/Javascript.js"></script>
 <script>
-customCursor();
-typer();
+  customCursor();
+  typer();
 </script>
 
 <head>

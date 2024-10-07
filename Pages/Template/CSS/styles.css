@@ -24,7 +24,9 @@ nav {
     position: sticky;
     top: 0;
     height: 5em;
-    background-color: rgb(48, 51, 64);
+    border: 1px solid green;
+    backdrop-filter: blur(10px);
+    background-color: rgb(0 0 0 / 66%);
 }
 
 nav .profile canvas {
@@ -45,7 +47,7 @@ nav .profile canvas {
     width: 60%;
     margin: auto;
     border-radius: 1em;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 1);
     border: 1px solid #1fd911;
     color: black;
     box-shadow: rgba(255, 255, 255, 0.35) 0px 0px 20px;
@@ -73,15 +75,19 @@ nav .profile canvas {
     font-size: 1.5vw;
 }
 
+.links2 {
+    display: none;
+}
+
 .links>ul>li {
-    padding-inline: 2em;
+    padding-inline: 1em;
     transition: 0.7s;
     transform-origin: left;
-    border-bottom: 2px solid transparent;
+    border-bottom: 1px dotted transparent;
 }
 
 .links>ul>li:hover {
-    border-bottom: 2px solid white;
+    border-bottom: 1px dotted green;
 }
 
 .Most-pop-head {
@@ -358,13 +364,15 @@ nav ul>li:nth-child(4) {
 }
 
 .cards div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex: 1;
     transition: .5s;
-    height: 20vh;
+    height: 5em;
 }
 
 .cards div img {
-    top: 3em;
     display: flex;
     width: 3em;
     position: relative;
@@ -424,7 +432,7 @@ nav ul>li:nth-child(4) {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 70vh;
+
     border: 1px solid green;
 
 }
@@ -474,7 +482,6 @@ nav ul>li:nth-child(4) {
 
 .news-pop input[type="submit"] {
     background-color: green;
-    height: 3em;
     color: white;
     padding: 0.5em 1em;
     border: none;
@@ -1301,12 +1308,14 @@ i {
     background-color: rgb(255 255 255 / 13%);
     backdrop-filter: blur(4px);
 }
+
 .reg-welcome div {
     margin: auto !important;
     max-width: 6em;
     text-align: left;
 
 }
+
 /* -----------------------login page styles---------------------------- */
 
 .Login {
@@ -1319,6 +1328,7 @@ i {
     margin-top: 3em;
     overflow: hidden;
 }
+
 .log-right {
     display: flex;
     justify-content: center;
@@ -1329,11 +1339,13 @@ i {
     background-position: center;
     background-repeat: no repeat;
 }
+
 .log-left {
     width: 45%;
     padding: 7em 3em;
     background-color: white;
 }
+
 .log-right .log-welcome {
     display: flex;
     align-items: center;
@@ -1346,43 +1358,169 @@ i {
     backdrop-filter: blur(4px);
 
 }
-.log-welcome div{
-    margin: auto!important;
+
+.log-welcome div {
+    margin: auto !important;
     max-width: 6em;
     text-align: left;
 }
-.log-input input{
+
+.log-input input {
     width: 100%;
     padding: 0.5em;
     border-radius: 5px;
     border: 1px solid gray;
     margin-top: 20px;
 }
-.forgot{
+
+.forgot {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
 }
-.Login input[type="submit"]{
+
+.Login input[type="submit"] {
     padding: 0.2em 0.9em;
     border: 1px solid gray;
     border-radius: 5px;
     margin-top: 3em;
     width: 100%;
 }
-.log-line{
+
+.log-line {
     display: flex;
 }
+
 .log-line hr {
     transform: rotate(90deg);
     height: 3em;
 
 }
-.google{
+
+.google {
     display: flex;
     justify-content: center;
 }
-.dont-have-account{
+
+.dont-have-account {
     margin-top: 1em;
     text-align: center;
+}
+
+
+/* -----------------------footer styles---------------------------- */
+.ft-top {
+    display: flex;
+    height: 10em;
+}
+
+.ft-t-left {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 40%;
+    background-color: #333;
+    color: white;
+    padding: 2em;
+}
+
+.ft-t-left div:nth-child(2) {
+    font-size: 2em;
+}
+
+.ft-t-right {
+    width: 60%;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ft-t-right div {
+    background-color: #333;
+    display: flex;
+    width: 80%;
+    border-radius: 2em;
+    overflow: hidden;
+    border: 1px solid #333;
+}
+
+.ft-t-right div input[type="email"] {
+    background-color: #333;
+    border: none;
+    color: white;
+    width: -webkit-fill-available;
+}
+
+.ft-t-right div input[type="submit"] {
+
+    font-size: 2em;
+    width: 9em;
+    border-radius: 2em;
+}
+
+@media screen and (max-width: 917px) {
+    .typing-container {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 785px) {
+    .links {
+        display: none;
+    }
+
+    .links2 {
+        display: flex;
+        padding: 1em;
+        background-color: green;
+        vertical-align: middle;
+        align-items: center;
+        border-radius: 2em;
+    }
+
+    .links2 .dropbtn {
+        font-size: 1.2em;
+
+    }
+
+    nav {
+        height: 4em;
+    }
+
+    .hero-sec {
+        flex-direction: column;
+    }
+
+    .hero {
+        margin: auto;
+        width: 70%;
+    }
+
+    .video-background {
+        height: 60em;
+    }
+
+    .herobox {
+        margin: auto;
+    }
+    .content {
+        width: 70%;
+        padding-left: 2em;
+        padding-top: 1em;
+    }
+    .body-text {
+        font-size: 1em;
+        padding: 1em;
+        letter-spacing: 2px;
+    }
+    .head-text {
+        font-size: 1.2em;
+        font-family: revert-layer;
+    }
+    .news-pop h1 {
+        font-size: 2em;
+    }
 }
