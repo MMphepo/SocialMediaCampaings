@@ -594,7 +594,7 @@ nav ul>li:nth-child(4) {
 /* Hide cursor on touch devices */
 @media (hover: none) and (pointer: coarse) {
 
-    .custom-cursor,
+    .custom-cursor, 
     .custom-pointer {
         display: none;
     }
@@ -920,8 +920,11 @@ e .moreInfo .cardtext {
 
 .L-haras .cont {
     padding: 1em;
+    width: 50%;
 }
-
+.L-haras>div {
+    width: 50%;
+}
 .L-balance {
     margin: 4em;
     border: 1px solid black;
@@ -1464,6 +1467,26 @@ i {
 @media screen and (max-width: 917px) {
     .typing-container {
         font-size: 30px;
+    }
+}
+@media screen and (max-width: 855px) {
+    .L-haras {
+        margin: 4em;
+        border: 1px solid black;
+        overflow: hidden !important;
+        margin: auto;
+        width: fit-content;
+        border-radius: 2em;
+        display: flex;
+        flex-direction: column-reverse;
+        width: 70%;
+        margin-top: 50;
+    }
+    .L-haras>div{
+        width: 100%;
+    }
+    .L-haras .cont {
+        width: 90%;
     }
 }
 

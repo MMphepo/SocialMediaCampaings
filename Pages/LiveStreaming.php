@@ -55,7 +55,7 @@
         <img src="https://images.pexels.com/photos/7676409/pexels-photo-7676409.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
     </div>
 </section>
-<section class="L-balance">
+<section class="L-haras">
     <div class="cont">
         <h2 class="text-2xl font-bold mb-4">Balancing Livestreaming and Real Life</h2>
         <p class="mb-4">While livestreaming can be exciting, it's important to maintain a healthy balance:</p>

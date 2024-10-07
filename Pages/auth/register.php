@@ -10,6 +10,7 @@ $style = "";
 </head>
 
 <body>
+    <div id="message" style="display: none;">Registration successful!</div>
     <section class="register">
         <div class="reg-left">
             <div class="reg-welcome">
@@ -34,7 +35,7 @@ $style = "";
                 <div class="reg-names">
                     <div class="reg-input">
                         <label for="date">Date of Birt</label>
-                        <input type="date" id="date" name="dob">
+                        <input type="date" id="date" name="dob" required>
                     </div>
                     <div class="reg-input">
                         <label for="email">Email address</label>
@@ -113,4 +114,55 @@ $style = "";
 
         }
     </script>
+
+
+
+    <script>
+        document.getElementById("registerForm").addEventListener("submit", async function(event) {
+            event.preventDefault(); // Prevent form from submitting the default way and refreshing the page
+
+            // Collect form data
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirm_password").value;
+            if (password !== confirmPassword) {
+                alert("Passwords do not match!");
+                return;
+
+            } else if (password.length >= 8 && password.length <= 20) {
+
+                const formData = new FormData(event.target);
+
+                try {
+                    // Send form data to the bacend using fetch
+                    const response = await fetch("../../controls/auth/registerControl.php", {
+                        method: "POST",
+                        body: formData,
+                    });
+
+                    // Handle the response
+                    const result = await response.json();
+                    if (result.success) {
+                        // Registration successful, you can display a success message or redirect the user
+                        const message = document.getElementById('message');
+                        message.style.display = 'block';
+                        setTimeout(function() {
+                            message.style.display = 'none';
+                            window.location.href = "./login.php";
+                        }, 5000);
+                    } else {
+                        // Display error message
+                        alert("Error: " + result.message);
+                    }
+                } catch (error) {
+                    // Handle any errors that occurred during the fetch
+                    console.error("Error:", error);
+                    alert("An error occurred while processing your request.");
+                }
+            }else{
+                alert("Password must be between 8 and 20 characters long!");
+            }
+        });
+        
+    </script>
+
     <script src="https://accounts.google.com/gsi/client" async defer></script>
