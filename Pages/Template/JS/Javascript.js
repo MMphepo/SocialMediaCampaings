@@ -1,20 +1,21 @@
-// window.addEventListener('load', () => {
-//   const pageTitle = document.title;  // Get the page title
-//   const pageURL = window.location.href;  // Get the current URL
+function activityHistory(){
+window.addEventListener('load', () => {
+  const pageTitle = document.title;  // Get the page title
+  const pageURL = window.location.href;  // Get the current URL
 
-//   // Send data to the backend
-//   fetch('../controls/recordhistory.php', {
-//       method: 'POST',
-//       headers: {
-//           'Content-Type': 'application/json',
-//       },
-//       body: JSON.stringify({ title: pageTitle, url: pageURL }),
-//   }).then(response => response.json())
-//   .then(data => {
-//       console.log('Browsing history stored:', data);
-//   }).catch(error => console.error('Error:', error));
-// });
-
+  // Send data to the backend
+  fetch('../controls/recordhistory.php', {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ title: pageTitle, url: pageURL }),
+  }).then(response => response.json())
+  .then(data => {
+      console.log('Browsing history stored:', data);
+  }).catch(error => console.error('Error:', error));
+});
+}
 
 function typer() {
   function fetchTextContent() {

@@ -1551,8 +1551,10 @@ i {
 .editprofile{
     display: none !important;
 }
+
 .timestamp{
-    width: 15em;
+    width: 25em;
+    text-align: center;
 }
 #editAccountForm .names div{
     display: flex;

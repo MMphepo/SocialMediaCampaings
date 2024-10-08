@@ -100,5 +100,6 @@
 <script src="./Template/JS/Javascript.js">
 </script>
 <script>
+    activityHistory();
     customCursor();
 </script>

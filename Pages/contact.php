@@ -81,8 +81,8 @@ $title = "Contact Us Page"
   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1436.9916346492685!2d33.797899779408006!3d-13.963030539844777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smw!4v1727950318550!5m2!1sen!2smw"  class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
 <script src="Template/JS/routes.js"></script>
-<script src="./Template/JS/Javascript.js">
-</script>
+<script src="./Template/JS/Javascript.js"></script>
 <script>
+  activityHistory();
   customCursor();
 </script>
