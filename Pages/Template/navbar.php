@@ -35,7 +35,25 @@
         <div class="profile">
             <?php
             if (isset($_SESSION['user_id'])) {
-                echo "<canvas id='contactIcon' width='50' height='50'></canvas>";
+                $fname = $_SESSION['firstname'];
+                $firstLetter = substr($fname, 0, 1);
+                echo "
+                    <div class='p-dropdown'>
+                        <canvas id='contactIcon' class='clickable p-dropdown' width='50' height='50'></canvas>
+                        <div class='p-dropdown-content'>
+                            <div>
+                                <div class='firstLetter'>$firstLetter</div>
+                                <a href='#'>Profile</a>
+                            </div>
+                            <div>
+                                <a href='#'>History</a>
+                            </div>
+                            <div>
+                                <a href='#' onclick='logout()'>Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                ";
             } else {
                 echo "<a onclick='toLogin()'>Login</a> | <a onclick='toSignUp()'>SignUp</a>";
             }

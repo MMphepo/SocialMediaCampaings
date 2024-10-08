@@ -1,0 +1,11 @@
+[07-Oct-2024 22:00:05 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'users.users' doesn't exist in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\auth\loginControl.php:24
+Stack trace:
+#0 C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\auth\loginControl.php(24): PDO->prepare('SELECT * FROM u...')
+#1 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\auth\loginControl.php on line 24
+[07-Oct-2024 22:47:34 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$keep_in in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\auth\loginControl.php on line 22
+[07-Oct-2024 22:52:23 Europe/Berlin] PHP Warning:  session_set_cookie_params(): Session cookie parameters cannot be changed when a session is active in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\auth\loginControl.php on line 35
+[07-Oct-2024 22:57:37 Europe/Berlin] PHP Warning:  session_set_cookie_params(): Session cookie parameters cannot be changed when a session is active in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\auth\loginControl.php on line 35
+[08-Oct-2024 00:02:22 Europe/Berlin] PHP Warning:  session_set_cookie_params(): Session cookie parameters cannot be changed when a session is active in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\auth\loginControl.php on line 37
+[08-Oct-2024 02:44:31 Europe/Berlin] PHP Warning:  session_set_cookie_params(): Session cookie parameters cannot be changed when a session is active in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\auth\loginControl.php on line 62
+[08-Oct-2024 03:19:06 Europe/Berlin] PHP Warning:  session_set_cookie_params(): Session cookie parameters cannot be changed when a session is active in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\auth\loginControl.php on line 37

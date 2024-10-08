@@ -1,0 +1,5 @@
+[07-Oct-2024 23:37:23 Europe/Berlin] PHP Warning:  require(../dbcon.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\recordhistory.php on line 5
+[07-Oct-2024 23:37:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../dbcon.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\recordhistory.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\recordhistory.php on line 5
