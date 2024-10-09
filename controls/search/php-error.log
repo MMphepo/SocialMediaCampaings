@@ -1,0 +1,104 @@
+[08-Oct-2024 10:25:13 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php:35
+Stack trace:
+#0 C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php(35): PDOStatement->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php on line 35
+[08-Oct-2024 10:25:15 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php:35
+Stack trace:
+#0 C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php(35): PDOStatement->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php on line 35
+[08-Oct-2024 10:25:33 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php:35
+Stack trace:
+#0 C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php(35): PDOStatement->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php on line 35
+[08-Oct-2024 10:28:43 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php:35
+Stack trace:
+#0 C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php(35): PDOStatement->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php on line 35
+[08-Oct-2024 10:31:33 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php:35
+Stack trace:
+#0 C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php(35): PDOStatement->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php on line 35
+[08-Oct-2024 10:31:48 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php:35
+Stack trace:
+#0 C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php(35): PDOStatement->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php on line 35
+[08-Oct-2024 10:31:49 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php:35
+Stack trace:
+#0 C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php(35): PDOStatement->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php on line 35
+[08-Oct-2024 10:31:49 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php:35
+Stack trace:
+#0 C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php(35): PDOStatement->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php on line 35
+[08-Oct-2024 10:31:51 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php:35
+Stack trace:
+#0 C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php(35): PDOStatement->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php on line 35
+[08-Oct-2024 10:31:52 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php:35
+Stack trace:
+#0 C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php(35): PDOStatement->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php on line 35
+[08-Oct-2024 10:31:52 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php:35
+Stack trace:
+#0 C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php(35): PDOStatement->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php on line 35
+[08-Oct-2024 12:50:06 Europe/Berlin] PHP Warning:  Undefined array key "search" in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php on line 11
+[08-Oct-2024 12:50:10 Europe/Berlin] PHP Warning:  Undefined array key "search" in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php on line 11
+[08-Oct-2024 12:50:16 Europe/Berlin] PHP Warning:  Undefined array key "search" in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php on line 11
+[08-Oct-2024 12:51:03 Europe/Berlin] PHP Warning:  Undefined array key "search" in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php on line 11
+[08-Oct-2024 12:51:20 Europe/Berlin] PHP Warning:  Undefined array key "search" in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php on line 11
+[08-Oct-2024 12:55:05 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php:35
+Stack trace:
+#0 C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php(35): PDOStatement->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php on line 35
+[08-Oct-2024 14:14:52 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php:35
+Stack trace:
+#0 C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php(35): PDOStatement->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php on line 35
+[08-Oct-2024 14:15:44 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php:35
+Stack trace:
+#0 C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php(35): PDOStatement->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php on line 35
+[08-Oct-2024 14:16:09 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php:35
+Stack trace:
+#0 C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php(35): PDOStatement->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php on line 35
+[08-Oct-2024 14:19:11 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php:35
+Stack trace:
+#0 C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php(35): PDOStatement->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php on line 35
+[08-Oct-2024 14:19:13 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php:35
+Stack trace:
+#0 C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php(35): PDOStatement->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php on line 35
+[08-Oct-2024 14:19:26 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class PDOStatement could not be converted to string in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php:34
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php on line 34
+[08-Oct-2024 14:20:11 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php:35
+Stack trace:
+#0 C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php(35): PDOStatement->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php on line 35
+[08-Oct-2024 14:22:59 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php:27
+Stack trace:
+#0 C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php(27): PDOStatement->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php on line 27

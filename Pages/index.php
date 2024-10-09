@@ -20,12 +20,20 @@ $title = "Home Page";
     </div>
     <div class="herobox">
       <div class="cube">
-        <div class="top-card"></div>
+        <div class="top-card">SMC</div>
         <div>
-          <span style="--i:0"></span>
-          <span style="--i:1"></span>
-          <span style="--i:2"></span>
-          <span style="--i:3"></span>
+          <span class="my-span" >
+            <img src="../media/whatsappblackicon.png" alt="">
+          </span>
+          <span class="my-span" >
+            <img src="../media/IG.png" alt="">
+          </span>
+          <span class="my-span" >
+            <img src="../media/blackemailicon.png" alt="">
+          </span>
+          <span class="my-span" >
+            <img src="../media/twitter.png" alt="">
+          </span>
         </div>
       </div>
     </div>

@@ -3,3 +3,18 @@
 Stack trace:
 #0 {main}
   thrown in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\recordhistory.php on line 5
+[09-Oct-2024 03:41:05 Europe/Berlin] PHP Warning:  Undefined array key "user_id" in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\recordhistory.php on line 11
+[09-Oct-2024 03:41:17 Europe/Berlin] PHP Warning:  Undefined array key "user_id" in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\recordhistory.php on line 11
+[09-Oct-2024 03:42:13 Europe/Berlin] PHP Warning:  Undefined array key "user_id" in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\recordhistory.php on line 11
+[09-Oct-2024 03:42:37 Europe/Berlin] PHP Warning:  Undefined array key "user_id" in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\recordhistory.php on line 11
+[09-Oct-2024 03:45:14 Europe/Berlin] PHP Warning:  Undefined array key "user_id" in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\recordhistory.php on line 11
+[09-Oct-2024 03:48:05 Europe/Berlin] PHP Warning:  Undefined array key "user_id" in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\recordhistory.php on line 11
+[09-Oct-2024 03:50:12 Europe/Berlin] PHP Warning:  Undefined array key "user_id" in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\recordhistory.php on line 11
+[09-Oct-2024 03:51:23 Europe/Berlin] PHP Warning:  Undefined array key "user_id" in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\recordhistory.php on line 11
+[09-Oct-2024 03:52:26 Europe/Berlin] PHP Warning:  Undefined array key "user_id" in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\recordhistory.php on line 11
+[09-Oct-2024 03:53:03 Europe/Berlin] PHP Warning:  Undefined array key "user_id" in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\recordhistory.php on line 11
+[09-Oct-2024 03:55:26 Europe/Berlin] PHP Warning:  Undefined array key "user_id" in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\recordhistory.php on line 11
+[09-Oct-2024 03:58:06 Europe/Berlin] PHP Warning:  Undefined array key "user_id" in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\recordhistory.php on line 11
+[09-Oct-2024 04:01:53 Europe/Berlin] PHP Warning:  Undefined array key "user_id" in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\recordhistory.php on line 11
+[09-Oct-2024 04:02:58 Europe/Berlin] PHP Warning:  Undefined array key "user_id" in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\recordhistory.php on line 11
+[09-Oct-2024 04:04:42 Europe/Berlin] PHP Warning:  Undefined array key "user_id" in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\recordhistory.php on line 11

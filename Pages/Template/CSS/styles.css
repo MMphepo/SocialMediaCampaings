@@ -3,6 +3,22 @@
     font-family: cursive;
 }
 
+.my-span:nth-child(1) {
+    --i: 0;
+}
+
+.my-span:nth-child(2) {
+    --i: 1;
+}
+
+.my-span:nth-child(3) {
+    --i: 2;
+}
+
+.my-span:nth-child(4) {
+    --i: 3;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -496,7 +512,15 @@ nav ul>li:nth-child(4) {
     margin-right: -7em;
     height: 50vh;
 }
-
+.my-span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.my-span img{
+    width: 60%;
+}
 .cube {
     position: relative;
     width: 200px;
@@ -546,7 +570,11 @@ nav ul>li:nth-child(4) {
     width: 100%;
     height: 100%;
     transform: rotateX(90deg) translateZ(100px);
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 4em;
 }
 
 .top-card::before {
@@ -594,7 +622,7 @@ nav ul>li:nth-child(4) {
 /* Hide cursor on touch devices */
 @media (hover: none) and (pointer: coarse) {
 
-    .custom-cursor, 
+    .custom-cursor,
     .custom-pointer {
         display: none;
     }
@@ -922,9 +950,11 @@ e .moreInfo .cardtext {
     padding: 1em;
     width: 50%;
 }
+
 .L-haras>div {
     width: 50%;
 }
+
 .L-balance {
     margin: 4em;
     border: 1px solid black;
@@ -1463,17 +1493,20 @@ i {
     width: 9em;
     border-radius: 2em;
 }
-.p-dropdown{
+
+.p-dropdown {
     position: relative;
     display: inline-block;
     color: #000;
     border-radius: 1em;
 
 }
-.p-dropdown-content>div{
+
+.p-dropdown-content>div {
     display: flex;
 }
-.p-dropdown-content .firstLetter{
+
+.p-dropdown-content .firstLetter {
     font-size: 1em;
     padding-inline: 15px;
     vertical-align: middle;
@@ -1482,55 +1515,64 @@ i {
     align-items: center;
     background-color: green !important;
 }
-.p-dropdown-content{
+
+.p-dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
-.p-dropdown-content a{
+
+.p-dropdown-content a {
     color: black;
     padding: 12px 16px;
     width: 100%;
     text-decoration: none;
     display: block;
 }
-.p-dropdown-content div:hover{
+
+.p-dropdown-content div:hover {
     color: #000;
     background-color: #a8ffa8;
 }
-.p-dropdown-content a:hover{
+
+.p-dropdown-content a:hover {
     color: #000;
-    
+
 }
 
 
 .p-dropdown:hover .p-dropdown-content {
     display: block !important;
 }
-.pro{
+
+.pro {
     padding: 2em;
 }
-.pro-bottom{
+
+.pro-bottom {
     display: flex !important;
 
 }
-.pro-left{
+
+.pro-left {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 20%;
     padding: 1em;
 }
-.pro-left>div{
+
+.pro-left>div {
     padding: 0.5em;
     background-color: #a8ffa8;
     width: 100%;
     margin-bottom: 1px;
 }
-.pro-right{
+
+.pro-right {
     width: 80%;
     padding: 1em;
     display: flex;
@@ -1539,36 +1581,42 @@ i {
     overflow-y: scroll;
     height: 27em;
 }
-#editAccountForm div{
+
+#editAccountForm div {
 
     margin-bottom: 1em;
 }
-#editAccountForm .names{
+
+#editAccountForm .names {
     display: flex;
-    
+
     justify-content: space-between;
 }
-.editprofile{
+
+.editprofile {
     display: none !important;
 }
 
-.timestamp{
+.timestamp {
     width: 25em;
     text-align: center;
 }
-#editAccountForm .names div{
+
+#editAccountForm .names div {
     display: flex;
     flex-direction: column;
     width: 45%;
 
 }
-#editAccountForm input{
+
+#editAccountForm input {
     width: 100%;
     padding: 0.5em;
     border-radius: 5px;
     border: 1px solid gray;
     margin-top: 20px;
 }
+
 /* -----------------------responsive styles---------------------------- */
 
 @media screen and (max-width: 917px) {
@@ -1576,6 +1624,7 @@ i {
         font-size: 30px;
     }
 }
+
 @media screen and (max-width: 855px) {
     .L-haras {
         margin: 4em;
@@ -1589,9 +1638,11 @@ i {
         width: 70%;
         margin-top: 50;
     }
-    .L-haras>div{
+
+    .L-haras>div {
         width: 100%;
     }
+
     .L-haras .cont {
         width: 90%;
     }
@@ -1636,20 +1687,24 @@ i {
     .herobox {
         margin: auto;
     }
+
     .content {
         width: 70%;
         padding-left: 2em;
         padding-top: 1em;
     }
+
     .body-text {
         font-size: 1em;
         padding: 1em;
         letter-spacing: 2px;
     }
+
     .head-text {
         font-size: 1.2em;
         font-family: revert-layer;
     }
+
     .news-pop h1 {
         font-size: 2em;
     }
