@@ -78,6 +78,7 @@
 </head>
 
 <body>
+    <?php include'Template/navbar.php' ?>
     <section class="search-section">
         <h2>Search Online Safety Tips</h2>
 
@@ -103,6 +104,38 @@
         <div class="results" id="safetyTipsResults">
             <!-- Results will be displayed here -->
         </div>
+    </section>
+    <section class="social-cards">
+        <div class="Soc-Card">
+            <div class="Soc-top">
+                <img src="../media/Fb.png" alt="">
+            </div>
+            <div class="Soc-body">
+                <h3>Safety Tips for Facebook</h3>
+                <p>Learn how to use Facebook safely and effectively.</p>
+            </div>
+        </div>
+        <div class="Soc-Card">
+            <div class="Soc-top">
+                <img src="../media/IG.png" alt="">
+            </div>
+            <div class="Soc-body">
+                <h3>Safety Tips for Instagram</h3>
+                <p>Learn how to use Instagram safely and effectively.</p>
+            </div>
+        </div>
+        <div class="Soc-Card">
+            <div class="Soc-top">
+                <img src="../media/Twitter.png" alt="">
+            </div>
+            <div class="Soc-body">
+                <h3>Safety Tips for Twitter</h3>
+                <p>Learn how to use Twitter safely and effectively.</p>
+            </div>
+        </div>
+        
+        
+
     </section>
 
     <script>
@@ -215,6 +248,13 @@
                 })
                 .catch(error => console.error('Error:', error));
         }
+    </script>
+    <script src="./Template/JS/Javascript.js"></script>
+    <script src="./Template/JS/routes.js"></script>
+    <script>
+        customCursor();
+        activityHistory();
+        
     </script>
 </body>
 

@@ -512,15 +512,18 @@ nav ul>li:nth-child(4) {
     margin-right: -7em;
     height: 50vh;
 }
-.my-span{
+
+.my-span {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
-.my-span img{
+
+.my-span img {
     width: 60%;
 }
+
 .cube {
     position: relative;
     width: 200px;
@@ -1494,6 +1497,7 @@ i {
     border-radius: 2em;
 }
 
+
 .p-dropdown {
     position: relative;
     display: inline-block;
@@ -1606,15 +1610,48 @@ i {
     width: 45%;
 
 }
-#content-source{
+
+#content-source {
     display: none;
 }
+
 #editAccountForm input {
     width: 100%;
     padding: 0.5em;
     border-radius: 5px;
     border: 1px solid gray;
     margin-top: 20px;
+}
+
+.social-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 80%;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.Soc-Card {
+    border: 1px solid #ccc;
+    border-radius: 1em;
+}
+
+.Soc-top {
+
+    width: 100%;
+    display: flex;
+
+}
+
+.social-cards .Soc-Card {
+    width: 30%;
+    margin-bottom: 1em;
+}
+
+.social-cards .Soc-Card img {
+    width: 90%;
+    margin: auto;
 }
 
 /* -----------------------responsive styles---------------------------- */

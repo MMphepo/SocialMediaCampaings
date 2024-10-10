@@ -21,7 +21,14 @@
 
         </div>
     </div>
-    <div class="ft-bottom"></div>
+    <div class="ft-bottom">
+        <div class="ft-b-left">
+            <h1>SMC</h1>
+            <p>Social Media Campaigns</p>
+        </div>
+        <div></div>
+        <div></div>
+    </div>
 </footer>
 
 

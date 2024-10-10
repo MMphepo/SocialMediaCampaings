@@ -19,7 +19,7 @@ include './Template/navbar.php' ;
   <section class="hero-sec">
     <div class="hero">
       <div class="comp-name">
-        <p>SOCIAL MEDIA COMPAIGN <?php echo $_SESSION['user_id'] . 'yes'; ?></p>
+        <p>SOCIAL MEDIA COMPAIGN></p>
       </div>
       <div class="hero-text typing-container">
         <div class="typing-container"><span id="typed-text"></span><span id="cursor">|</span></div>
