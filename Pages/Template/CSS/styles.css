@@ -1593,9 +1593,7 @@ i {
     justify-content: space-between;
 }
 
-.editprofile {
-    display: none !important;
-}
+
 
 .timestamp {
     width: 25em;
@@ -1608,7 +1606,9 @@ i {
     width: 45%;
 
 }
-
+#content-source{
+    display: none;
+}
 #editAccountForm input {
     width: 100%;
     padding: 0.5em;

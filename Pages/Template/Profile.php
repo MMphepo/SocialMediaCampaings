@@ -12,13 +12,13 @@
     </div>
     <div class="pro-bottom">
         <div class="pro-left">
-            <div>Edit Profile</div>
-            <div>Activity History</div>
+            <div onclick="profileView()">Edit Profile</div>
+            <div onclick="history()">Activity History</div>
             <div>Log Out</div>
             <div>Delete account</div>
         </div>
         <div class="pro-right">
-            <div class="editprofile">
+            <div id="editprofile" class="editprofile">
                 <form id="editAccountForm" method="POST">
                     <div class="names">
                         <div>
@@ -85,7 +85,7 @@
                     });
                 });
             </script>
-            <div class="activityhistory">
+            <div id="activityhistory" class="activityhistory">
                 <h2>Your Browsing History</h2>
                 <table id="historyTable">
                     <thead>
@@ -162,7 +162,6 @@
                 </script>
 
             </div>
-
         </div>
     </div>
 </div>
@@ -171,5 +170,20 @@
 <script src="./JS/Javascript.js"></script>
 
 <script>
+
     customCursor();
+</script>
+<script>
+    const profile = document.getElementById('editprofile')
+    const History = document.getElementById('activityhistory')
+    profile.style.display = 'block'
+    History.style.display = 'none'
+    function profileView(){
+        profile.style.display = 'block'
+        History.style.display = 'none'
+    }
+    function history(){
+        profile.style.display = 'none'
+        History.style.display = 'block'
+    }
 </script>

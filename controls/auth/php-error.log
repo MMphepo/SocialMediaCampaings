@@ -12,3 +12,30 @@ Stack trace:
 [08-Oct-2024 07:40:13 Europe/Berlin] PHP Warning:  session_set_cookie_params(): Session cookie parameters cannot be changed when a session is active in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\auth\loginControl.php on line 37
 [08-Oct-2024 08:55:15 Europe/Berlin] PHP Warning:  session_set_cookie_params(): Session cookie parameters cannot be changed when a session is active in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\auth\loginControl.php on line 37
 [08-Oct-2024 08:57:25 Europe/Berlin] PHP Warning:  session_set_cookie_params(): Session cookie parameters cannot be changed when a session is active in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\auth\loginControl.php on line 37
+[09-Oct-2024 04:28:21 Europe/Berlin] PHP Warning:  session_set_cookie_params(): Session cookie parameters cannot be changed when a session is active in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\auth\loginControl.php on line 37
+[09-Oct-2024 07:52:57 Europe/Berlin] PHP Warning:  session_set_cookie_params(): Session cookie parameters cannot be changed when a session is active in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\auth\loginControl.php on line 37
+[09-Oct-2024 19:58:30 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function num_rows() on array in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\auth\verify.php:26
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\auth\verify.php on line 26
+[09-Oct-2024 20:41:11 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\auth\verify.php:30
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\auth\verify.php on line 30
+[09-Oct-2024 20:44:11 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\auth\verify.php on line 29
+[09-Oct-2024 20:44:11 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\auth\verify.php on line 30
+[09-Oct-2024 20:44:11 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\auth\verify.php on line 31
+[09-Oct-2024 20:58:15 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\auth\verify.php on line 29
+[09-Oct-2024 20:58:15 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\auth\verify.php on line 30
+[09-Oct-2024 20:58:15 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\auth\verify.php on line 31
+[09-Oct-2024 20:58:15 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\auth\verify.php on line 34
+[09-Oct-2024 20:59:40 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\auth\verify.php on line 29
+[09-Oct-2024 20:59:40 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\auth\verify.php on line 30
+[09-Oct-2024 20:59:40 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\auth\verify.php on line 31
+[09-Oct-2024 20:59:40 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\auth\verify.php on line 34
+[09-Oct-2024 21:04:13 Europe/Berlin] Error: SQLSTATE[HY000]: General error: 1364 Field 'dob' doesn't have a default value
+[09-Oct-2024 21:08:12 Europe/Berlin] Error: cURL error 56: OpenSSL SSL_read: error:0A000126:SSL routines::unexpected eof while reading, errno 0 (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://www.googleapis.com/oauth2/v3/certs
+[09-Oct-2024 21:08:30 Europe/Berlin] Error: SQLSTATE[HY000]: General error: 1364 Field 'password' doesn't have a default value
+[09-Oct-2024 21:12:05 Europe/Berlin] Error: cURL error 6: Could not resolve host: www.googleapis.com (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://www.googleapis.com/oauth2/v3/certs
+[09-Oct-2024 21:55:59 Europe/Berlin] PHP Warning:  session_set_cookie_params(): Session cookie parameters cannot be changed when a session is active in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\auth\loginControl.php on line 37
+[09-Oct-2024 23:05:54 Europe/Berlin] PHP Warning:  session_set_cookie_params(): Session cookie parameters cannot be changed when a session is active in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\auth\loginControl.php on line 48

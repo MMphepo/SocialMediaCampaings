@@ -34,7 +34,7 @@
         </div>
         <div class="profile">
             <?php
-            if (isset($_SESSION['user_id'])) {
+            if (isset($_SESSION['user_id']) ) {
                 $fname = $_SESSION['firstname'];
                 $firstLetter = substr($fname, 0, 1);
                 echo "
@@ -43,7 +43,7 @@
                         <div class='p-dropdown-content'>
                             <div>
                                 <div class='firstLetter'>$firstLetter</div>
-                                <a href='#'>Profile</a>
+                                <a href='Template/Profile.php'>Profile</a>
                             </div>
                             <div>
                                 <a href='#'>History</a>

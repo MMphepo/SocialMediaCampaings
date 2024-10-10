@@ -155,16 +155,20 @@ $title = "login page";
                     messageDiv.style.color = 'green';
                     messageDiv.innerText = 'Login successful!';
                 } else {
-                    if (result.error == 'Invalid password') {
-                        passwordDiv.style.border = '1px solid red';
-                        perrorDiv.innerText = result.error;
-                        perrorDiv.style.display = 'block'
-                    } else if (result.error == 'Email not found') {
+                     if (result.error == 'Email not found') {
                         emailDiv.style.border = '1px solid red';
                         eerrorDiv.innerText = result.error;
                         eerrorDiv.style.display = 'block'
-                    }else{
-                        console.log(result.error);
+                    }
+                    else if(result.error == 'Too many failed attempts. Account locked for 10 minutes.'){
+                        messageDiv.style.display = 'block';
+                        
+                        messageDiv.innerText = result.error;
+                    }
+                    else{
+                        passwordDiv.style.border = '1px solid red';
+                        perrorDiv.innerText = result.error;
+                        perrorDiv.style.display = 'block'
                     }
                     
                 }

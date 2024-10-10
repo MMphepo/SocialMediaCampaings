@@ -1,18 +1,25 @@
 <?php
 $title = "Home Page";
 ?>
-<?php include './Template/navbar.php' ?>
+<?php
+
+
+include './Template/navbar.php' ;
+
+?>
+
+<head>
+  <meta name="google-signin-client_id" content="601717773215-ki89r8n493im5u5kir9udc4h803qsjrk.apps.googleusercontent.com">
+</head>
 <div class="video-background">
   <video autoplay loop muted playsinline>
     <source src="../media/720pFH.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-
-
   <section class="hero-sec">
     <div class="hero">
       <div class="comp-name">
-        <p>SOCIAL MEDIA COMPAIGN</p>
+        <p>SOCIAL MEDIA COMPAIGN <?php echo $_SESSION['user_id'] . 'yes'; ?></p>
       </div>
       <div class="hero-text typing-container">
         <div class="typing-container"><span id="typed-text"></span><span id="cursor">|</span></div>
@@ -22,28 +29,22 @@ $title = "Home Page";
       <div class="cube">
         <div class="top-card">SMC</div>
         <div>
-          <span class="my-span" >
+          <span class="my-span">
             <img src="../media/whatsappblackicon.png" alt="">
           </span>
-          <span class="my-span" >
+          <span class="my-span">
             <img src="../media/IG.png" alt="">
           </span>
-          <span class="my-span" >
+          <span class="my-span">
             <img src="../media/blackemailicon.png" alt="">
           </span>
-          <span class="my-span" >
+          <span class="my-span">
             <img src="../media/twitter.png" alt="">
           </span>
         </div>
       </div>
     </div>
   </section>
-
-
-  <div class="contents">
-    <h1>Welcome to My Website</h1>
-    <p>This div has a video background!</p>
-  </div>
 </div>
 <div class="Most-pop-head">
   <h1>Most Popular Social Media Platforms</h1>
@@ -138,82 +139,87 @@ $title = "Home Page";
   </div>
 </section>
 <section class="rssfeed">
-<div class="tagshop" style="width:100%;height:100%;overflow: auto;">
-  <div class="tagshop-socialwall" data-wall-id="17879" data-source="website"></div>
-  <script src="https://widget.tagshop.ai/embed-lite.min.js" type="text/javascript"></script>
-</div>
+  <div class="tagshop" style="width:100%;height:100%;overflow: auto;">
+    <div class="tagshop-socialwall" data-wall-id="17879" data-source="website"></div>
+    <script src="https://widget.tagshop.ai/embed-lite.min.js" type="text/javascript"></script>
+  </div>
 </section>
 
 
-<div id="content-source" style="display:none;">
+<div id="content-source">
   <p>Aiming to create a safe online environment for every Teenager</p>
 </div>
-
-<!--  -->
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Custom Cursor Example</title>
-  <style>
-    /* Paste the custom cursor CSS here */
-    /* Custom cursor for the entire website */
-  </style>
-</head>
-
-
-
-
-
-</html>
 
 <script src="Template/JS/routes.js"></script>
 <script src="Template/JS/Javascript.js"></script>
 <script>
-  activityHistory();
   customCursor();
   typer();
 </script>
 
-<head>
-  <meta name="google-signin-client_id" content="601717773215-ki89r8n493im5u5kir9udc4h803qsjrk.apps.googleusercontent.com">
+<div id="g_id_onload"
+  data-client_id="601717773215-ki89r8n493im5u5kir9udc4h803qsjrk.apps.googleusercontent.com"
+  data-login_uri="https://redirectmeto.com/http://localhost:80/SocialMediaCompany/SocialMediaCampaingks/Pages/"
+  data-auto_prompt="false">
+</div>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<script>
+  function handleCredentialResponse(response) {
+    // Send the credential to your backend for verification
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', '../controls/auth/verify.php');
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.onload = function() {
+      console.log('Signed in as: ' + xhr.responseText);
+    };
+    xhr.send('credential=' + response.credential);
+  }
 
-</head>
-
-<body>
-  <div id="g_id_onload"
-    data-client_id="601717773215-ki89r8n493im5u5kir9udc4h803qsjrk.apps.googleusercontent.com"
-    data-login_uri="https://redirectmeto.com/http://localhost:80/SocialMediaCompany/SocialMediaCampaingks/Pages/"
-    data-auto_prompt="false">
-  </div>
-  <script>
+   window.onload = function() {
+    var check = new XMLHttpRequest();
     function handleCredentialResponse(response) {
-      // Send the credential to your backend for verification
-      var xhr = new XMLHttpRequest();
-      xhr.open('POST', '../controls/auth/verify.php');
-      xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-      xhr.onload = function() {
-        console.log('Signed in as: ' + xhr.responseText);
-      };
-      xhr.send('credential=' + response.credential);
-    }
+    // Send the credential to your backend for verification
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', '../controls/auth/verify.php');
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.onload = function() {
+      console.log('Signed in as: ' + xhr.responseText);
+    };
+    xhr.send('credential=' + response.credential);
+  }
 
-    window.onload = function() {
-      google.accounts.id.initialize({
-        client_id: '601717773215-ki89r8n493im5u5kir9udc4h803qsjrk.apps.googleusercontent.com',
-        callback: handleCredentialResponse
-      });
-      google.accounts.id.renderButton(
-        document.getElementById('g_id_signin'), {
-          theme: 'outline',
-          size: 'large'
-        } // Customization attributes
-      );
+    check.open("GET", "../controls/checkLogin.php?action=checkLoginStatus", true);
+    check.onload = function() {
 
-      google.accounts.id.prompt(); // Automatically prompt for sign-in
+      if (check.status === 200) {
+        var response = JSON.parse(check.responseText);
+        if (!response.loggedIn) {
 
-    }
-  </script>
-  <script src="https://accounts.google.com/gsi/client" async defer></script>
+          google.accounts.id.initialize({
+            client_id: '601717773215-ki89r8n493im5u5kir9udc4h803qsjrk.apps.googleusercontent.com',
+            callback: handleCredentialResponse
+          });
+          google.accounts.id.renderButton(
+            document.getElementById('g_id_signin'), {
+              theme: 'outline',
+              size: 'large'
+            } // Customization attributes
+          );
+          google.accounts.id.prompt(); // Automatically prompt for sign-in
+          activityHistory();
+        }
+      } else {
+        alert("Error checking login status");
+      }
+    };
+    check.onerror = function() {
+      alert("Error checking login status");
+    };
+    check.send();
+
+   }
+</script>
+
+<script>
+  
+</script>
