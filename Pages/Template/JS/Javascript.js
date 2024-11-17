@@ -4,7 +4,7 @@ window.addEventListener('load', () => {
   const pageURL = window.location.href;  // Get the current URL
 
   // Send data to the backend
-  fetch('../controls/recordhistory.php', {
+  fetch('../controls/profile/recordhistory.php', {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json',
@@ -16,7 +16,34 @@ window.addEventListener('load', () => {
   }).catch(error => console.error('Error:', error));
 });
 }
+function subscribeNewsletter(event) {
+  event.preventDefault(); 
 
+  const email = document.getElementById('emailnewsletter').value;
+
+  if (email) {
+      fetch('../controls/subscribecontrol.php', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ email: email })
+      })
+      .then(response => response.json())
+      .then(data => {
+          if (data.success) {
+              alert("Subscribed successfully!");
+          } else {
+              alert("Error: " + data.error);
+          }
+      })
+      .catch(error => {
+          console.error("Error:", error);
+      });
+  } else {
+      alert("Please enter a valid email.");
+  }
+}
 function typer() {
   function fetchTextContent() {
     const sourceElement = document.getElementById("content-source");

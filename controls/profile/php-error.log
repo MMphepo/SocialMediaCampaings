@@ -1,0 +1,80 @@
+[11-Oct-2024 11:13:28 Europe/Berlin] PHP Warning:  require(dbcon.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\profile\recordhistory.php on line 5
+[11-Oct-2024 11:13:28 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'dbcon.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\profile\recordhistory.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\profile\recordhistory.php on line 5
+[11-Oct-2024 11:14:48 Europe/Berlin] PHP Warning:  require(dbcon.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\profile\recordhistory.php on line 5
+[11-Oct-2024 11:14:48 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'dbcon.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\profile\recordhistory.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\profile\recordhistory.php on line 5
+[11-Oct-2024 11:15:48 Europe/Berlin] PHP Warning:  require(dbcon.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\profile\recordhistory.php on line 5
+[11-Oct-2024 11:15:48 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'dbcon.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\profile\recordhistory.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\profile\recordhistory.php on line 5
+[11-Oct-2024 11:16:30 Europe/Berlin] PHP Warning:  require(dbcon.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\profile\recordhistory.php on line 5
+[11-Oct-2024 11:16:30 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'dbcon.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\profile\recordhistory.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\profile\recordhistory.php on line 5
+[11-Oct-2024 11:16:56 Europe/Berlin] PHP Warning:  require(dbcon.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\profile\recordhistory.php on line 5
+[11-Oct-2024 11:16:56 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'dbcon.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\profile\recordhistory.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\profile\recordhistory.php on line 5
+[11-Oct-2024 13:16:34 Europe/Berlin] PHP Warning:  require(dbcon.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\profile\recordhistory.php on line 5
+[11-Oct-2024 13:16:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'dbcon.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\profile\recordhistory.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\profile\recordhistory.php on line 5
+[17-Nov-2024 18:16:25 Europe/Berlin] PHP Warning:  require(dbcon.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\profile\recordhistory.php on line 5
+[17-Nov-2024 18:16:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'dbcon.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\profile\recordhistory.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\profile\recordhistory.php on line 5
+[17-Nov-2024 18:16:53 Europe/Berlin] PHP Warning:  require(dbcon.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\profile\recordhistory.php on line 5
+[17-Nov-2024 18:16:53 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'dbcon.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\profile\recordhistory.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\profile\recordhistory.php on line 5
+[17-Nov-2024 18:25:48 Europe/Berlin] PHP Warning:  require(dbcon.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\profile\recordhistory.php on line 5
+[17-Nov-2024 18:25:48 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'dbcon.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\profile\recordhistory.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\profile\recordhistory.php on line 5
+[17-Nov-2024 18:31:55 Europe/Berlin] PHP Warning:  require(dbcon.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\profile\recordhistory.php on line 5
+[17-Nov-2024 18:31:55 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'dbcon.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\profile\recordhistory.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\profile\recordhistory.php on line 5
+[17-Nov-2024 18:33:59 Europe/Berlin] PHP Warning:  require(dbcon.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\profile\recordhistory.php on line 5
+[17-Nov-2024 18:33:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'dbcon.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\profile\recordhistory.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\profile\recordhistory.php on line 5
+[17-Nov-2024 18:37:46 Europe/Berlin] PHP Warning:  require(dbcon.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\profile\recordhistory.php on line 5
+[17-Nov-2024 18:37:47 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'dbcon.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\profile\recordhistory.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\profile\recordhistory.php on line 5
+[17-Nov-2024 18:38:06 Europe/Berlin] PHP Warning:  require(dbcon.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\profile\recordhistory.php on line 5
+[17-Nov-2024 18:38:06 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'dbcon.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\profile\recordhistory.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\profile\recordhistory.php on line 5
+[17-Nov-2024 18:40:19 Europe/Berlin] PHP Warning:  require(dbcon.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\profile\recordhistory.php on line 5
+[17-Nov-2024 18:40:19 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'dbcon.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\profile\recordhistory.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\profile\recordhistory.php on line 5
+[17-Nov-2024 18:41:33 Europe/Berlin] PHP Warning:  require(dbcon.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\profile\recordhistory.php on line 5
+[17-Nov-2024 18:41:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'dbcon.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\profile\recordhistory.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\profile\recordhistory.php on line 5
+[17-Nov-2024 19:04:55 Europe/Berlin] PHP Warning:  require(dbcon.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\profile\recordhistory.php on line 5
+[17-Nov-2024 19:04:55 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'dbcon.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\profile\recordhistory.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\profile\recordhistory.php on line 5

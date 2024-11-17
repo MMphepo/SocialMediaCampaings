@@ -142,3 +142,8 @@ Stack trace:
 #0 C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php(27): PDOStatement->execute()
 #1 {main}
   thrown in C:\xampp\htdocs\SocialMediaCompany\SocialMediaCampaingks\controls\search\getTips.php on line 27
+[17-Nov-2024 18:40:33 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\search\getTips.php:27
+Stack trace:
+#0 C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\search\getTips.php(27): PDOStatement->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\SocialMediaCompany\P00202470_MaathMphepo_DW\SocialMediaCampaings\controls\search\getTips.php on line 27

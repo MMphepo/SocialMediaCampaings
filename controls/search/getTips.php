@@ -1,5 +1,5 @@
 <?php
-ini_set('log_errors', 1); // Log errors instead
+ini_set('log_errors', 1); 
 ini_set('error_log', 'php-error.log');
 require '../dbcon.php';
 

@@ -70,7 +70,7 @@
         <img src="https://images.pexels.com/photos/4260643/pexels-photo-4260643.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
     </div>
 </section>
-
+<?php include'./Template/footer.php' ?>
 <script src="./Template/JS/Javascript.js"></script>
 <script src="./Template/JS/routes.js"></script>
 <script>

@@ -1,5 +1,5 @@
 <?php
-// api.php
+
 session_start();
 
 if ($_GET['action'] == 'checkLoginStatus') {

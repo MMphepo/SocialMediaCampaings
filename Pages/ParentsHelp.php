@@ -42,6 +42,7 @@ include './Template/navbar.php';
     </div>
 
 </section>
+<?php include'./Template/footer.php' ?>
 <script src="./Template/JS/Javascript.js"></script>
 <script src="./Template/JS/routes.js"></script>
 <script>

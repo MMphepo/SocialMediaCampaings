@@ -1,5 +1,5 @@
 <?php
-require '../dbcon.php'; // Ensure you have a database connection file
+require '../dbcon.php'; 
 
 $sql = "SELECT id, platform_name FROM platforms";
 $stmt = $pdo->prepare($sql);

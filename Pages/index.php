@@ -4,7 +4,7 @@ $title = "Home Page";
 <?php
 
 
-include './Template/navbar.php' ;
+include './Template/navbar.php';
 
 ?>
 
@@ -133,9 +133,26 @@ include './Template/navbar.php' ;
     <h1>Subscribe</h1>
     <div class="newsText">Receive the latest emails on the most effective ways of online safety</div>
     <form>
-      <input type="email" name="email" id="emailnewsletter" placeholder="Enter your email">
-      <input type="submit" value="Subscribe">
+      <input form="newsletter" type="email" name="email" id="emailnewsletter" placeholder="Enter your email">
+      <input form="newsletter" type="submit" value="Subscribe">
     </form>
+  </div>
+</section>
+<section class="stay-safe">
+  <h2 class="">Stay Safe Online</h2>
+  <div class="ss-body">
+    <div class="ss-card">
+      <h3 class="">Protect Your Privacy</h3>
+      <p>Learn how to manage your privacy settings effectively.</p>
+    </div>
+    <div class="ss-card">
+      <h3 class="">Recognize Cyberbullying</h3>
+      <p>Identify signs of cyberbullying and learn how to respond.</p>
+    </div>
+    <div class="ss-card">
+      <h3 class="">Digital Footprint Awareness</h3>
+      <p>Understand the long-term impact of your online actions.</p>
+    </div>
   </div>
 </section>
 <section class="rssfeed">
@@ -145,11 +162,42 @@ include './Template/navbar.php' ;
   </div>
 </section>
 
-
+<?php include './Template/footer.php' ?>
 <div id="content-source">
   <p>Aiming to create a safe online environment for every Teenager</p>
 </div>
+<script>
+  function subscribeNewsletter(event) {
+    event.preventDefault(); // Prevent form from submitting traditionally
 
+    const email = document.getElementById('emailnewsletter').value;
+
+    if (email) {
+      fetch('../controls/subscribecontrol.php', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            email: email
+          })
+        })
+        .then(response => response.json())
+        .then(data => {
+          if (data.success) {
+            alert("Subscribed successfully!");
+          } else {
+            alert("Error: " + data.error);
+          }
+        })
+        .catch(error => {
+          console.error("Error:", error);
+        });
+    } else {
+      alert("Please enter a valid email.");
+    }
+  }
+</script>
 <script src="Template/JS/routes.js"></script>
 <script src="Template/JS/Javascript.js"></script>
 <script>
@@ -175,18 +223,19 @@ include './Template/navbar.php' ;
     xhr.send('credential=' + response.credential);
   }
 
-   window.onload = function() {
+  window.onload = function() {
     var check = new XMLHttpRequest();
+
     function handleCredentialResponse(response) {
-    // Send the credential to your backend for verification
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', '../controls/auth/verify.php');
-    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-    xhr.onload = function() {
-      console.log('Signed in as: ' + xhr.responseText);
-    };
-    xhr.send('credential=' + response.credential);
-  }
+      // Send the credential to your backend for verification
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', '../controls/auth/verify.php');
+      xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+      xhr.onload = function() {
+        console.log('Signed in as: ' + xhr.responseText);
+      };
+      xhr.send('credential=' + response.credential);
+    }
 
     check.open("GET", "../controls/checkLogin.php?action=checkLoginStatus", true);
     check.onload = function() {
@@ -217,9 +266,9 @@ include './Template/navbar.php' ;
     };
     check.send();
 
-   }
+  }
 </script>
 
 <script>
-  
+
 </script>

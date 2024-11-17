@@ -9,7 +9,7 @@ $title = "Contact Us Page"
 </section>
 <section class="contSection">
   <div class="C-left">
-    <form action="#" method="post">
+    <form>
       <div class="C-emp">
         <input type="email" name="email" id="email" placeholder="Email">
         <input type="number" name="phoneNumber" id="phoneNumber" placeholder="Phone Number">
@@ -25,7 +25,7 @@ $title = "Contact Us Page"
           </div>
           <div>
             <input class="clickable" type="checkbox" name="policy" id="policybox">
-            <p>you agree with our <a href="#"> privacy policy</a></p>
+            <p>you agree with our <a href="../media/Privacy Policy.pdf"> privacy policy</a></p>
           </div>
 
         </div>
@@ -37,8 +37,8 @@ $title = "Contact Us Page"
     <div class="R-content">
       <h2>Our Newsletter</h2>
       <p>Subscribe to our newsletter to receive updates about our latest social media campaigns. We also provide the latest and most effective ways of online safety specailly tailored for todays teens</p>
-      <input type="email" name="emai" id="email" placeholder="email">
-      <input type="submit" value="Submit">
+      <input form="newsletter" type="email" name="email" id="emailnewsletter" placeholder="email">
+      <input form="newsletter" type="submit" value="Submit">
     </div>
   </div>
 </section>
@@ -78,11 +78,76 @@ $title = "Contact Us Page"
   </div>
 </section>
 <section class="C-Map">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1436.9916346492685!2d33.797899779408006!3d-13.963030539844777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smw!4v1727950318550!5m2!1sen!2smw"  class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1436.9916346492685!2d33.797899779408006!3d-13.963030539844777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smw!4v1727950318550!5m2!1sen!2smw" class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
+<?php include './Template/footer.php' ?>
+<script>
+  const popupHTML = `
+<div class="popup-overlay" id="popup">
+    <div class="popup-content success-popup">
+        <button class="close-button" onclick="closePopup()">&times;</button>
+        <p class="popup-message">Your email has been received, we will send you feedback as soon as possible</p>
+    </div>
+</div>
+`;
+
+  document.body.insertAdjacentHTML('beforeend', popupHTML);
+
+  const name = document.getElementById('name');
+  const email = document.getElementById('email');
+  const phoneNumber = document.getElementById('phoneNumber');
+  const message = document.getElementById('message');
+
+  function showPopup() {
+    if (name == '' || email == '' || phoneNumber == '' || message == '') {
+      const popup = document.getElementById('popup');
+      popup.classList.add('show');
+
+      // Auto-hide after 5 seconds
+      setTimeout(() => {
+        closePopup();
+      }, 5000);
+    } else {
+      document.querySelector('.popup-content').className = 'popup-content error-popup';
+      document.querySelector('.popup-message').textContent = 'Please fill in all fields appropriately';
+      popup.classList.add('show');
+
+      // Auto-hide after 5 seconds
+      setTimeout(() => {
+        closePopup();
+      }, 3000);
+    }
+  }
+
+  function closePopup() {
+    const popup = document.getElementById('popup');
+    popup.classList.remove('show');
+  }
+
+  // Add click event to submit button
+  document.getElementById('submit').addEventListener('click', function(e) {
+    e.preventDefault();
+    showPopup();
+  });
+
+  // Close popup when clicking outside
+  document.getElementById('popup').addEventListener('click', function(e) {
+    if (e.target === this) {
+      closePopup();
+    }
+  });
+
+  // Close popup with Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      closePopup();
+    }
+  });
+</script>
 <script src="Template/JS/routes.js"></script>
 <script src="./Template/JS/Javascript.js"></script>
 <script>
   activityHistory();
   customCursor();
+  subscribeNewsletter(event);
 </script>

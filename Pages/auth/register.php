@@ -56,7 +56,7 @@ $style = "";
                     </div>
                     <div>
                         <input class="clickable" type="checkbox" name="policy" id="policybox">
-                        <p>I agree with the Terms and <a href="#"> privacy policy</a></p>
+                        <p>I agree with the Terms and <a href="../../media/Privacy Policy.pdf"> privacy policy</a></p>
                     </div>
                 </div>
                 <hr>
@@ -88,7 +88,7 @@ $style = "";
     </script>
     <script>
         function handleCredentialResponse(response) {
-            // Send the credential to your backend for verification
+            // Send the credential to backend for verification
             var xhr = new XMLHttpRequest();
             xhr.open('POST', '../../controls/auth/verify.php');
             xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');

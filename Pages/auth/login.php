@@ -82,7 +82,7 @@ $title = "login page";
     </script>
     <script>
         function handleCredentialResponse(response) {
-            // Send the credential to your backend for verification
+            // Send the credential to backend for verification
             var xhr = new XMLHttpRequest();
             xhr.open('POST', '../../controls/auth/verify.php');
             xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');

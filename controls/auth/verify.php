@@ -1,7 +1,7 @@
 <?php
-ini_set('display_errors', 0); // Don't display errors
-ini_set('log_errors', 1); // Log errors instead
-ini_set('error_log', 'php-error.log'); // Set the path for the error log
+ini_set('display_errors', 0); 
+ini_set('log_errors', 1); // Log errors
+ini_set('error_log', 'php-error.log'); 
 session_start();
 require_once '../../vendor/autoload.php'; // Path to Google API Client Library
 require '../dbcon.php';

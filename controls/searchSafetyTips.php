@@ -1,5 +1,5 @@
 <?php
-require 'dbcon.php'; // Include database connection
+require 'dbcon.php'; 
 
 // Receive the search parameters (platform, method, or latest)
 $platform_id = isset($_GET['platform_id']) ? $_GET['platform_id'] : null;

@@ -1,5 +1,5 @@
 <?php
-require '../dbcon.php'; // Include the connection to the database
+require '../dbcon.php'; 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Set the response header to JSON format

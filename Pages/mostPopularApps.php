@@ -137,7 +137,7 @@
         
 
     </section>
-
+    <?php include'./Template/footer.php' ?>
     <script>
         // On page load, fetch platforms and safety methods to populate filters
         document.addEventListener("DOMContentLoaded", () => {
@@ -254,7 +254,7 @@
     <script>
         customCursor();
         activityHistory();
-        
+
     </script>
 </body>
 

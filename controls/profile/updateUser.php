@@ -2,15 +2,13 @@
 session_start();
 require 'dbcon.php';
 
-$user_id = $_SESSION['user_id']; // Assuming the user is logged in and the user ID is stored in the session
+$user_id = $_SESSION['user_id']; 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $firstname = $_POST['firstname'];
     $lastname = $_POST['lastname'];
     $dob = $_POST['dob'];
     $email = $_POST['email'];
-
-    // Validate and sanitize the input as needed
 
     // Update the user's details in the database
     try {

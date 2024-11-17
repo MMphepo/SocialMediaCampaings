@@ -95,7 +95,7 @@
     </div>
     </div>
 </section>
-
+<?php include'./Template/footer.php' ?>
 <script src="Template/JS/routes.js"></script>
 <script src="./Template/JS/Javascript.js">
 </script>

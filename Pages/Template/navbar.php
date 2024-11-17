@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $title ?></title>
     <link rel="stylesheet" href="Template/CSS/styles.css">
+    <form id="newsletter" onsubmit="subscribeNewsletter(event)"></form>
 </head>
 
 <body>
@@ -34,7 +35,7 @@
         </div>
         <div class="profile">
             <?php
-            if (isset($_SESSION['user_id']) ) {
+            if (isset($_SESSION['user_id'])) {
                 $fname = $_SESSION['firstname'];
                 $firstLetter = substr($fname, 0, 1);
                 echo "
