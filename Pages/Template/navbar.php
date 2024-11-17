@@ -17,13 +17,13 @@
         <div class="icon" onclick="toHome()">SMC</div>
         <div class="links">
             <ul>
-                <li onclick="toHome()">Home</li>
-                <li onclick="toContact()">Contact</li>
-                <li onclick="toMostPop()">Popular Apps</li>
-                <li onclick="toInfo()">Information</li>
+                <li class="clickable" onclick="toHome()">Home</li>
+                <li class="clickable" onclick="toContact()">Contact</li>
+                <li class="clickable" onclick="toMostPop()">Popular Apps</li>
+                <li class="clickable" onclick="toInfo()">Information</li>
                 <li>
                     <div class="dropdown">
-                        <div class="dropbtn">More Info</div>
+                        <div class="clickable dropbtn">More Info</div>
                         <div class="dropdown-content">
                             <a onclick="toParents()">How Parents can Help</a>
                             <a onclick="toLive()">Livestreaming</a>
@@ -47,7 +47,7 @@
                                 <a href='Template/Profile.php'>Profile</a>
                             </div>
                             <div>
-                                <a href='#'>History</a>
+                                <a href='Template/Profile.php?param=hist'>History</a>
                             </div>
                             <div>
                                 <a href='#' onclick='logout()'>Logout</a>
@@ -61,7 +61,7 @@
             ?>
         </div>
 
-        <div class="search"><canvas id="searchIcon" width="50" height="50"></canvas></div>
+        <div class="clickable search"><canvas id="searchIcon" width="50" height="50"></canvas></div>
         <div class="links2">
             <div class="dropdown">
                 <div class="dropbtn">More Info</div>

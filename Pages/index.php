@@ -56,16 +56,16 @@ include './Template/navbar.php';
         <h1 class="head-text" id="head-text">Whatsapp</h1>
       </div>
       <div class="cont-body" id="cont-body">
-        <p class="body-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit fuga itaque cupiditate, us iste non.</p>
+        <p class="body-text" id="body-text">A private messaging app for chatting, sharing photos, and staying connected with friends and family. Use responsibly to maintain your privacy.</p>
       </div>
     </div>
   </div>
   <div class="bottom">
     <div class="cards">
-      <div class="card-1" onclick="twitter()"><img src="../media/twitter.png" alt=""></div>
-      <div class="card-2" onclick="facebook()"><img src="../media/Fb.png" alt=""></div>
-      <div class="card-3" onclick="whatsapp()"><img src="../media/Whatsapp.png" alt=""></div>
-      <div class="card-4" onclick="instagram()"><img src="../media/IG.png" alt=""></div>
+      <div title="click me" class="clickable card-1" onclick="twitter()"><img src="../media/twitter.png" alt=""></div>
+      <div title="click me" class="clickable card-2" onclick="facebook()"><img src="../media/Fb.png" alt=""></div>
+      <div title="click me" class="clickable card-3" onclick="whatsapp()"><img src="../media/Whatsapp.png" alt=""></div>
+      <div title="click me" class="clickable card-4" onclick="instagram()"><img src="../media/IG.png" alt=""></div>
     </div>
   </div>
 
@@ -79,6 +79,8 @@ include './Template/navbar.php';
       headText.style.backdropFilter = 'blur(10px)';
 
       var contbody = document.getElementById('cont-body');
+      var bodytext = document.getElementById('body-text');
+      bodytext.innerHTML = 'A fast-paced platform for sharing thoughts, news, and trends in real-time. Stay informed but be mindful of what you tweet!';
       contbody.style.removeProperty('background');
       contbody.style.removeProperty('opacity');
       contbody.style.backgroundColor = 'rgb(49 255 236 / 68%)';
@@ -94,6 +96,8 @@ include './Template/navbar.php';
       headText.style.backdropFilter = 'blur(10px)';
 
       var contbody = document.getElementById('cont-body');
+      var body_text = document.getElementById('body-text');
+      body_text.innerHTML = 'A hub for connecting with friends, joining groups, and exploring interests. Stay safe by controlling your audience and sharing wisely.';
       contbody.style.removeProperty('background');
       contbody.style.removeProperty('opacity');
       contbody.style.backgroundColor = 'rgb(8 102 255 / 50%)';
@@ -109,6 +113,8 @@ include './Template/navbar.php';
       headText.style.backdropFilter = 'blur(10px)';
 
       var contbody = document.getElementById('cont-body');
+      var body_text = document.getElementById('body-text');
+      body_text.innerHTML = 'A private messaging app for chatting, sharing photos, and staying connected with friends and family. Use responsibly to maintain your privacy.';
       contbody.style.removeProperty('background');
       contbody.style.removeProperty('opacity');
       contbody.style.backgroundColor = 'rgb(11 215 63 / 50%)';
@@ -122,6 +128,8 @@ include './Template/navbar.php';
       headText.style.background = 'linear-gradient(23deg, #ec8211, #e6683c, #dc2743, #cc2366, #d8139a)';
       headText.style.backdropFilter = 'blur(10px)';
       var contbody = document.getElementById('cont-body');
+      var body_text = document.getElementById('body-text');
+      body_text.innerHTML = 'A creative platform for sharing photos, reels, and stories. Express yourself while keeping your profile secure and respectful.';
       contbody.style.opacity = 0.5;
       contbody.style.background = 'linear-gradient(23deg, #ec8211, #e6683c, #dc2743, #cc2366, #d8139a)';
       contbody.style.backdropFilter = 'blur(10px)';

@@ -2,7 +2,7 @@
 ini_set('log_errors', 1); // Log errors instead
 ini_set('error_log', 'php-error.log');
 session_start();
-require 'dbcon.php';
+require '../dbcon.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 

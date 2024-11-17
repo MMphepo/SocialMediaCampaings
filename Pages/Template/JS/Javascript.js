@@ -94,10 +94,12 @@ function customCursor() {
   document.addEventListener("DOMContentLoaded", () => {
     cursor = document.createElement("div");
     cursor.classList.add("custom-cursor");
+    cursor.style.zIndex = "2000000"
     document.body.appendChild(cursor);
 
     pointer = document.createElement("div");
     pointer.classList.add("custom-pointer");
+    pointer.style.zIndex = "2000001"
     document.body.appendChild(pointer);
 
     document.addEventListener("mousemove", handleMouseMove);
@@ -121,7 +123,7 @@ function customCursor() {
   function handleMouseOver(e) {
     if (
       e.target.matches(
-        'a, button, [role="button"], input[type="submit"], input[type="button"], .clickable'
+        'a, button, [role="button"], input[type="submit"], input[type="button"], .clickable, .gsc-selected-option, .gsc-results-close-btn, .gsc-tabHeader'
       )
     ) {
       pointer.style.opacity = "1";

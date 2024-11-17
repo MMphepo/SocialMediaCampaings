@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'dbcon.php';
+require '../dbcon.php';
 
 $user_id = $_SESSION['user_id']; 
 

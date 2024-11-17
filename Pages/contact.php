@@ -11,12 +11,12 @@ $title = "Contact Us Page"
   <div class="C-left">
     <form>
       <div class="C-emp">
-        <input type="email" name="email" id="email" placeholder="Email">
-        <input type="number" name="phoneNumber" id="phoneNumber" placeholder="Phone Number">
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        <input type="number" name="phoneNumber" id="phoneNumber" placeholder="Phone Number" required>
       </div>
       <div class="C-msg">
-        <input type="text" name="name" id="name" placeholder="Name">
-        <textarea name="message" id="message" rows="10" cols="30" placeholder="Enter your Message"></textarea>
+        <input type="text" name="name" id="name" placeholder="Name" required>
+        <textarea name="message" id="message" rows="10" cols="30" placeholder="Enter your Message" required></textarea>
       </div>
       <div class="C-send">
         <div class="policy">
@@ -24,7 +24,7 @@ $title = "Contact Us Page"
             <input type="submit" value="Send" id="submit">
           </div>
           <div>
-            <input class="clickable" type="checkbox" name="policy" id="policybox">
+            <input class="clickable" type="checkbox" name="policy" id="policybox" required">
             <p>you agree with our <a href="../media/Privacy Policy.pdf"> privacy policy</a></p>
           </div>
 
@@ -82,24 +82,25 @@ $title = "Contact Us Page"
 </section>
 <?php include './Template/footer.php' ?>
 <script>
-  const popupHTML = `
-<div class="popup-overlay" id="popup">
+  const popupHTML = `<div class="popup-overlay" id="popup">
     <div class="popup-content success-popup">
         <button class="close-button" onclick="closePopup()">&times;</button>
         <p class="popup-message">Your email has been received, we will send you feedback as soon as possible</p>
     </div>
-</div>
-`;
+</div>`;
 
   document.body.insertAdjacentHTML('beforeend', popupHTML);
 
-  const name = document.getElementById('name');
-  const email = document.getElementById('email');
-  const phoneNumber = document.getElementById('phoneNumber');
-  const message = document.getElementById('message');
+
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const phoneNumber = document.getElementById('phoneNumber').value;
+  const message = document.getElementById('message').value;
+  console.table(message, email, phoneNumber, message);
 
   function showPopup() {
-    if (name == '' || email == '' || phoneNumber == '' || message == '') {
+    if (![name, email, phoneNumber, message].every(field => field.trim() !== '')) {
+      console.table(message, email, phoneNumber, message);
       const popup = document.getElementById('popup');
       popup.classList.add('show');
 
@@ -127,7 +128,27 @@ $title = "Contact Us Page"
   // Add click event to submit button
   document.getElementById('submit').addEventListener('click', function(e) {
     e.preventDefault();
-    showPopup();
+    const policybox = document.getElementById('policybox');
+    console.log('Policybox element:', policybox);
+    
+    if (!policybox) {
+        console.error('Policybox element not found!');
+        return;
+    }
+    
+    const checked = policybox.checked;
+    console.log('Checkbox checked:', checked);
+    
+    if (checked) {
+      showPopup();
+    } else {
+      document.getElementById('policyError').textContent = 'Please accept our privacy policy to proceed';
+      policybox.classList.add('error');
+      policybox.addEventListener('change', function() {
+        policybox.classList.remove('error');
+        document.getElementById('policyError').textContent = '';
+      });
+    }
   });
 
   // Close popup when clicking outside

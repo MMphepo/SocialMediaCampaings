@@ -5,83 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Safety Tips Search</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
 
-        .search-section {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        h2 {
-            text-align: center;
-            color: #333;
-        }
-
-        .search-bar {
-            margin-bottom: 20px;
-        }
-
-        .search-bar input {
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        .filters {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-
-        .filters select {
-            width: 48%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        .results {
-            background-color: #fff;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            padding: 20px;
-            min-height: 100px;
-        }
-
-        .results div {
-            margin-bottom: 15px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #ccc;
-        }
-
-        .results div:last-child {
-            border-bottom: none;
-        }
-
-        .results h3 {
-            margin: 0;
-            font-size: 18px;
-        }
-
-        .results p {
-            margin: 5px 0 0;
-        }
-    </style><!-- Link to your styles -->
 </head>
 
 <body>
-    <?php include'Template/navbar.php' ?>
+    <?php include 'Template/navbar.php' ?>
     <section class="search-section">
-        <h2>Search Online Safety Tips</h2>
-
+        <h2>Search for The Latest Online Safety Tips</h2>
+        <script async src="https://cse.google.com/cse.js?cx=a143ffcb685864115">
+        </script>
+        <div class="gcse-search"></div>
         <!-- Search Bar -->
         <div class="search-bar">
             <input type="text" id="searchInput" placeholder="Search for safety tips..." onchange="searchonly()">
@@ -133,11 +66,11 @@
                 <p>Learn how to use Twitter safely and effectively.</p>
             </div>
         </div>
-        
-        
+
+
 
     </section>
-    <?php include'./Template/footer.php' ?>
+    <?php include './Template/footer.php' ?>
     <script>
         // On page load, fetch platforms and safety methods to populate filters
         document.addEventListener("DOMContentLoaded", () => {
@@ -254,7 +187,6 @@
     <script>
         customCursor();
         activityHistory();
-
     </script>
 </body>
 

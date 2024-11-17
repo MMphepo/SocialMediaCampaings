@@ -12,8 +12,8 @@
     </div>
     <div class="pro-bottom">
         <div class="pro-left">
-            <div onclick="profileView()">Edit Profile</div>
-            <div onclick="history()">Activity History</div>
+            <div class="clickable" onclick="profileView()">Edit Profile</div>
+            <div class="clickable" onclick="history()">Activity History</div>
             <div>Log Out</div>
             <div>Delete account</div>
         </div>
@@ -41,12 +41,15 @@
                     <input type="submit" value="Save Changes">
                 </form>
 
-                <div id="update-message" style="display: none;"></div>
+                <div id="update-message hidden"></div>
             </div>
             <script>
+                const url = window.location.href;
+
+
                 document.addEventListener("DOMContentLoaded", function() {
                     // Fetch user details to prefill the form when the page loads
-                    fetch('../../controls/userDetails.php')
+                    fetch('../../controls/profile/userDetails.php')
                         .then(response => response.json())
                         .then(data => {
                             if (data.success) {
@@ -87,6 +90,7 @@
             </script>
             <div id="activityhistory" class="activityhistory">
                 <h2>Your Browsing History</h2>
+                <div id="delete-message" style="display: none;"></div>
                 <table id="historyTable">
                     <thead>
                         <tr>
@@ -100,12 +104,12 @@
                     </tbody>
                 </table>
 
-                <div id="delete-message" style="display: none;"></div>
+
 
                 <script>
                     document.addEventListener("DOMContentLoaded", function() {
                         // Fetch browsing history when the page loads
-                        fetch('../../controls/userHistory.php')
+                        fetch('../../controls/profile/userHistory.php')
                             .then(response => response.json())
                             .then(data => {
                                 const historyBody = document.getElementById('historyBody');
@@ -130,10 +134,10 @@
                                 });
                             });
                     });
-                    
+
                     function deleteHistory(entryId) {
                         if (confirm("Are you sure you want to delete this history entry?")) {
-                            fetch('../../controls/deleteHistory.php', {
+                            fetch('../../controls/profile/deleteHistory.php', {
                                     method: 'POST',
                                     headers: {
                                         'Content-Type': 'application/json'
@@ -155,6 +159,10 @@
                                         messageDiv.innerText = result.message || 'Delete failed';
                                     }
                                     messageDiv.style.display = 'block';
+
+                                    setTimeout(function() {
+                                        messageDiv.style.display = 'none';
+                                    }, 5000);
                                 })
                                 .catch(error => console.error('Error:', error));
                         }
@@ -170,7 +178,6 @@
 <script src="./JS/Javascript.js"></script>
 
 <script>
-
     customCursor();
 </script>
 <script>
@@ -178,12 +185,24 @@
     const History = document.getElementById('activityhistory')
     profile.style.display = 'block'
     History.style.display = 'none'
-    function profileView(){
-        profile.style.display = 'block'
-        History.style.display = 'none'
+
+    function profileView() {
+        if (window.location.href == "http://localhost/SocialMediaCompany/P00202470_MaathMphepo_DW/SocialMediaCampaings/Pages/Template/Profile.php?param=hist") {
+            window.location.href = 'http://localhost/SocialMediaCompany/P00202470_MaathMphepo_DW/SocialMediaCampaings/Pages/Template/Profile.php';
+            profile.style.display = 'block'
+            History.style.display = 'none'
+        }else{
+            profile.style.display = 'block'
+            History.style.display = 'none'
+        }
+
     }
-    function history(){
+
+    function history() {
         profile.style.display = 'none'
         History.style.display = 'block'
+    }
+    if (url == "http://localhost/SocialMediaCompany/P00202470_MaathMphepo_DW/SocialMediaCampaings/Pages/Template/Profile.php?param=hist") {
+        history();
     }
 </script>
